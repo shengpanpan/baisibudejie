@@ -17,7 +17,7 @@
 //   ======`-.____`-.___\_____/___.-`____.-'======
 //                      `=---='
 //
-//            杰哥保佑                永无BUG
+//         杰哥保佑     开工大吉          永无BUG
 //
 //
 //  AppDelegate.m
@@ -28,6 +28,7 @@
 //
 
 #import "AppDelegate.h"
+#import "SPTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -38,7 +39,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 创建控制器
-    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    SPTabBarController *tabBarVC = [[SPTabBarController alloc] init];
     tabBarVC.view.backgroundColor = [UIColor redColor];
     
     //设置window

@@ -13,6 +13,15 @@
 		B283FA351C9262B900312DB6 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283FA341C9262B900312DB6 /* ______UITests.m */; };
 		B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795A91C92E2E400A80CC9 /* AppDelegate.m */; };
 		B29795B01C92E2E400A80CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795AA1C92E2E400A80CC9 /* main.m */; };
+		B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795B71C92E6E100A80CC9 /* SPTabBarController.m */; };
+		B29795BE1C92E7BF00A80CC9 /* SPEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795BD1C92E7BF00A80CC9 /* SPEssenceViewController.m */; };
+		B29795C11C92E88200A80CC9 /* SPFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C01C92E88200A80CC9 /* SPFriendTrendViewController.m */; };
+		B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C31C92E8B700A80CC9 /* SPMeViewController.m */; };
+		B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C61C92E8E500A80CC9 /* SPNewController.m */; };
+		B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C91C92E92000A80CC9 /* SPPublishController.m */; };
+		B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */; };
+		B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */; };
+		B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC15751C92F48100F06343 /* UIImage+originalImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +55,25 @@
 		B29795A81C92E2E400A80CC9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B29795A91C92E2E400A80CC9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B29795AA1C92E2E400A80CC9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B29795B61C92E6E100A80CC9 /* SPTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTabBarController.h; sourceTree = "<group>"; };
+		B29795B71C92E6E100A80CC9 /* SPTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTabBarController.m; sourceTree = "<group>"; };
+		B29795BC1C92E7BF00A80CC9 /* SPEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEssenceViewController.h; sourceTree = "<group>"; };
+		B29795BD1C92E7BF00A80CC9 /* SPEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPEssenceViewController.m; sourceTree = "<group>"; };
+		B29795BF1C92E88200A80CC9 /* SPFriendTrendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFriendTrendViewController.h; sourceTree = "<group>"; };
+		B29795C01C92E88200A80CC9 /* SPFriendTrendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFriendTrendViewController.m; sourceTree = "<group>"; };
+		B29795C21C92E8B700A80CC9 /* SPMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPMeViewController.h; sourceTree = "<group>"; };
+		B29795C31C92E8B700A80CC9 /* SPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMeViewController.m; sourceTree = "<group>"; };
+		B29795C51C92E8E500A80CC9 /* SPNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNewController.h; sourceTree = "<group>"; };
+		B29795C61C92E8E500A80CC9 /* SPNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNewController.m; sourceTree = "<group>"; };
+		B29795C81C92E92000A80CC9 /* SPPublishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPPublishController.h; path = "仿百思不得姐/Classes/New(新帖)/Controller/SPPublishController.h"; sourceTree = SOURCE_ROOT; };
+		B29795C91C92E92000A80CC9 /* SPPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPPublishController.m; path = "仿百思不得姐/Classes/New(新帖)/Controller/SPPublishController.m"; sourceTree = SOURCE_ROOT; };
+		B2A9BA641C931403002FAA1F /* SPCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCustomTabBar.h; sourceTree = "<group>"; };
+		B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCustomTabBar.m; sourceTree = "<group>"; };
+		B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SPExtension.h"; sourceTree = "<group>"; };
+		B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SPExtension.m"; sourceTree = "<group>"; };
+		B2A9BA721C931867002FAA1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2DC15741C92F48100F06343 /* UIImage+originalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+originalImage.h"; sourceTree = "<group>"; };
+		B2DC15751C92F48100F06343 /* UIImage+originalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+originalImage.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +161,7 @@
 		B29795961C92E2E400A80CC9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B29795B21C92E6A300A80CC9 /* Main(主要) */,
 				B29795971C92E2E400A80CC9 /* Essence(精华) */,
 				B29795A31C92E2E400A80CC9 /* New(新帖) */,
 				B297959B1C92E2E400A80CC9 /* FriendTrend(关注) */,
@@ -156,6 +185,8 @@
 		B29795981C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B29795BC1C92E7BF00A80CC9 /* SPEssenceViewController.h */,
+				B29795BD1C92E7BF00A80CC9 /* SPEssenceViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +218,8 @@
 		B297959C1C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B29795BF1C92E88200A80CC9 /* SPFriendTrendViewController.h */,
+				B29795C01C92E88200A80CC9 /* SPFriendTrendViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -218,6 +251,8 @@
 		B29795A01C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B29795C21C92E8B700A80CC9 /* SPMeViewController.h */,
+				B29795C31C92E8B700A80CC9 /* SPMeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,6 +284,8 @@
 		B29795A41C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B29795C51C92E8E500A80CC9 /* SPNewController.h */,
+				B29795C61C92E8E500A80CC9 /* SPNewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -270,7 +307,9 @@
 		B29795A71C92E2E400A80CC9 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B29795CB1C92EF7900A80CC9 /* Category */,
 				B29795AA1C92E2E400A80CC9 /* main.m */,
+				B2A9BA721C931867002FAA1F /* PrefixHeader.pch */,
 				B29795A81C92E2E400A80CC9 /* AppDelegate.h */,
 				B29795A91C92E2E400A80CC9 /* AppDelegate.m */,
 			);
@@ -291,6 +330,8 @@
 		B29795AC1C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B29795C81C92E92000A80CC9 /* SPPublishController.h */,
+				B29795C91C92E92000A80CC9 /* SPPublishController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,6 +348,52 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		B29795B21C92E6A300A80CC9 /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				B29795B31C92E6A300A80CC9 /* Controller */,
+				B29795B41C92E6A300A80CC9 /* Model */,
+				B29795B51C92E6A300A80CC9 /* View */,
+			);
+			path = "Main(主要)";
+			sourceTree = "<group>";
+		};
+		B29795B31C92E6A300A80CC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B29795B61C92E6E100A80CC9 /* SPTabBarController.h */,
+				B29795B71C92E6E100A80CC9 /* SPTabBarController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B29795B41C92E6A300A80CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B29795B51C92E6A300A80CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2A9BA641C931403002FAA1F /* SPCustomTabBar.h */,
+				B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B29795CB1C92EF7900A80CC9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC15741C92F48100F06343 /* UIImage+originalImage.h */,
+				B2DC15751C92F48100F06343 /* UIImage+originalImage.m */,
+				B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */,
+				B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,6 +458,7 @@
 		B283FA011C9262B900312DB6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SP;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = panda.sheng;
 				TargetAttributes = {
@@ -438,8 +526,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */,
+				B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */,
 				B29795B01C92E2E400A80CC9 /* main.m in Sources */,
+				B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */,
+				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
+				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
+				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
+				B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */,
+				B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */,
+				B29795BE1C92E7BF00A80CC9 /* SPEssenceViewController.m in Sources */,
+				B29795C11C92E88200A80CC9 /* SPFriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +659,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "仿百思不得姐/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "仿百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -576,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "仿百思不得姐/Classes/Other/PrefixHeader.pch";
 				INFOPLIST_FILE = "仿百思不得姐/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

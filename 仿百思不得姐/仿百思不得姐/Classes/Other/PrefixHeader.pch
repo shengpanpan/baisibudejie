@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  仿百思不得姐
+//
+//  Created by 风 on 16/3/11.
+//  Copyright © 2016年 panda.sheng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+/*** 如果希望某些内容能拷贝到任何源代码文件(OC\C\C++等), 那么就不要写在#ifdef __OBJC__和#endif之间 ***/
+
+
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+#ifdef __OBJC__
+
+#import "UIView+SPExtension.h"
+
+/*** 日志 ***/
+#ifdef DEBUG
+#define SPLog(...) NSLog(__VA_ARGS__)
+#else
+#define SPLog(...)
+#endif
+
+#define SPLogFunc SPLog(@"%s", __func__);
+
+/*** 颜色 ***/
+#define SPColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define SPColor(r, g, b) SPColorA((r), (g), (b), 255)
+#define SPRandomColor SPColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+#endif
+/***** 在#ifdef __OBJC__和#endif之间的内容, 只会拷贝到OC源代码文件中, 不会拷贝到其他语言的源代码文件中 *****/
+
+
+#endif /* PrefixHeader_pch */
