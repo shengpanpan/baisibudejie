@@ -1,3 +1,24 @@
+//                      _ooOoo_
+//                     o8888888o
+//                     88" . "88
+//                     (| -_- |)
+//                     O\  =  /O
+//                  ____/`---'\____
+//                 .' \\|     |// `.
+//                / \\||| :   |||// \
+//               / _||||| -:- |||||- \
+//              |   | \\\  -  /// |   |
+//              | \_|  ''\---/ '' |   |
+//              \  .-\__  `-`  ___/-. /
+//             ___`. .' /--.--\  `. . __
+//          ."" '< `.___\_<|>_/___.' >'"".
+//         | | : `- \`.;`\ _ /`;.`/ - ` : | |
+//          \ \ `-.  \_ __\ /__ _/ .-`    / /
+//   ======`-.____`-.___\_____/___.-`____.-'======
+//                      `=---='
+//
+//            杰哥保佑                永无BUG
+//
 //
 //  AppDelegate.m
 //  仿百思不得姐
@@ -16,7 +37,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    // 创建控制器
+    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    tabBarVC.view.backgroundColor = [UIColor redColor];
+    
+    //设置window
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = tabBarVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

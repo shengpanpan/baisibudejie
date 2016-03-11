@@ -1,3 +1,10 @@
+
+//
+//  KBAppDelegate.m
+//  KidsBook
+//
+//  Created by Lukes Lu on 13-9-29.
+//  Copyright (c) 2013年 KidsBook Office. All rights reserved.
 //
 //  AppDelegate.h
 //  仿百思不得姐

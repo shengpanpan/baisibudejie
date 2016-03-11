@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B283FA0E1C9262B900312DB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B283FA0D1C9262B900312DB6 /* main.m */; };
-		B283FA111C9262B900312DB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B283FA101C9262B900312DB6 /* AppDelegate.m */; };
-		B283FA141C9262B900312DB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B283FA131C9262B900312DB6 /* ViewController.m */; };
-		B283FA171C9262B900312DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B283FA151C9262B900312DB6 /* Main.storyboard */; };
 		B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B283FA181C9262B900312DB6 /* ______.xcdatamodeld */; };
 		B283FA1C1C9262B900312DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B283FA1B1C9262B900312DB6 /* Assets.xcassets */; };
-		B283FA1F1C9262B900312DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B283FA1D1C9262B900312DB6 /* LaunchScreen.storyboard */; };
 		B283FA2A1C9262B900312DB6 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283FA291C9262B900312DB6 /* ______Tests.m */; };
 		B283FA351C9262B900312DB6 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283FA341C9262B900312DB6 /* ______UITests.m */; };
+		B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795A91C92E2E400A80CC9 /* AppDelegate.m */; };
+		B29795B01C92E2E400A80CC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795AA1C92E2E400A80CC9 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,15 +34,8 @@
 
 /* Begin PBXFileReference section */
 		B283FA091C9262B900312DB6 /* 仿百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B283FA0D1C9262B900312DB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B283FA0F1C9262B900312DB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B283FA101C9262B900312DB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B283FA121C9262B900312DB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B283FA131C9262B900312DB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B283FA161C9262B900312DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B283FA191C9262B900312DB6 /* ______.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "______.xcdatamodel"; sourceTree = "<group>"; };
 		B283FA1B1C9262B900312DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B283FA1E1C9262B900312DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B283FA201C9262B900312DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B283FA251C9262B900312DB6 /* 仿百思不得姐Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿百思不得姐Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283FA291C9262B900312DB6 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
@@ -53,6 +43,9 @@
 		B283FA301C9262B900312DB6 /* 仿百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283FA341C9262B900312DB6 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
 		B283FA361C9262B900312DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B29795A81C92E2E400A80CC9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B29795A91C92E2E400A80CC9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B29795AA1C92E2E400A80CC9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,15 +96,7 @@
 		B283FA0B1C9262B900312DB6 /* 仿百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				B283FA0F1C9262B900312DB6 /* AppDelegate.h */,
-				B283FA101C9262B900312DB6 /* AppDelegate.m */,
-				B283FA121C9262B900312DB6 /* ViewController.h */,
-				B283FA131C9262B900312DB6 /* ViewController.m */,
-				B283FA151C9262B900312DB6 /* Main.storyboard */,
-				B283FA1B1C9262B900312DB6 /* Assets.xcassets */,
-				B283FA1D1C9262B900312DB6 /* LaunchScreen.storyboard */,
-				B283FA201C9262B900312DB6 /* Info.plist */,
-				B283FA181C9262B900312DB6 /* ______.xcdatamodeld */,
+				B29795961C92E2E400A80CC9 /* Classes */,
 				B283FA0C1C9262B900312DB6 /* Supporting Files */,
 			);
 			path = "仿百思不得姐";
@@ -120,7 +105,9 @@
 		B283FA0C1C9262B900312DB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B283FA0D1C9262B900312DB6 /* main.m */,
+				B283FA1B1C9262B900312DB6 /* Assets.xcassets */,
+				B283FA181C9262B900312DB6 /* ______.xcdatamodeld */,
+				B283FA201C9262B900312DB6 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -141,6 +128,185 @@
 				B283FA361C9262B900312DB6 /* Info.plist */,
 			);
 			path = "仿百思不得姐UITests";
+			sourceTree = "<group>";
+		};
+		B29795961C92E2E400A80CC9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B29795971C92E2E400A80CC9 /* Essence(精华) */,
+				B29795A31C92E2E400A80CC9 /* New(新帖) */,
+				B297959B1C92E2E400A80CC9 /* FriendTrend(关注) */,
+				B297959F1C92E2E400A80CC9 /* Me(我) */,
+				B29795AB1C92E2E400A80CC9 /* Publisth(发布) */,
+				B29795A71C92E2E400A80CC9 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B29795971C92E2E400A80CC9 /* Essence(精华) */ = {
+			isa = PBXGroup;
+			children = (
+				B29795981C92E2E400A80CC9 /* Controller */,
+				B29795991C92E2E400A80CC9 /* Model */,
+				B297959A1C92E2E400A80CC9 /* View */,
+			);
+			path = "Essence(精华)";
+			sourceTree = "<group>";
+		};
+		B29795981C92E2E400A80CC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B29795991C92E2E400A80CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B297959A1C92E2E400A80CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B297959B1C92E2E400A80CC9 /* FriendTrend(关注) */ = {
+			isa = PBXGroup;
+			children = (
+				B297959C1C92E2E400A80CC9 /* Controller */,
+				B297959D1C92E2E400A80CC9 /* Model */,
+				B297959E1C92E2E400A80CC9 /* View */,
+			);
+			path = "FriendTrend(关注)";
+			sourceTree = "<group>";
+		};
+		B297959C1C92E2E400A80CC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B297959D1C92E2E400A80CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B297959E1C92E2E400A80CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B297959F1C92E2E400A80CC9 /* Me(我) */ = {
+			isa = PBXGroup;
+			children = (
+				B29795A01C92E2E400A80CC9 /* Controller */,
+				B29795A11C92E2E400A80CC9 /* Model */,
+				B29795A21C92E2E400A80CC9 /* View */,
+			);
+			path = "Me(我)";
+			sourceTree = "<group>";
+		};
+		B29795A01C92E2E400A80CC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B29795A11C92E2E400A80CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B29795A21C92E2E400A80CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B29795A31C92E2E400A80CC9 /* New(新帖) */ = {
+			isa = PBXGroup;
+			children = (
+				B29795A41C92E2E400A80CC9 /* Controller */,
+				B29795A51C92E2E400A80CC9 /* Model */,
+				B29795A61C92E2E400A80CC9 /* View */,
+			);
+			path = "New(新帖)";
+			sourceTree = "<group>";
+		};
+		B29795A41C92E2E400A80CC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B29795A51C92E2E400A80CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B29795A61C92E2E400A80CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B29795A71C92E2E400A80CC9 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B29795AA1C92E2E400A80CC9 /* main.m */,
+				B29795A81C92E2E400A80CC9 /* AppDelegate.h */,
+				B29795A91C92E2E400A80CC9 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		B29795AB1C92E2E400A80CC9 /* Publisth(发布) */ = {
+			isa = PBXGroup;
+			children = (
+				B29795AC1C92E2E400A80CC9 /* Controller */,
+				B29795AD1C92E2E400A80CC9 /* Model */,
+				B29795AE1C92E2E400A80CC9 /* View */,
+			);
+			name = "Publisth(发布)";
+			path = "Publisth(关注)";
+			sourceTree = "<group>";
+		};
+		B29795AC1C92E2E400A80CC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B29795AD1C92E2E400A80CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B29795AE1C92E2E400A80CC9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +412,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B283FA1F1C9262B900312DB6 /* LaunchScreen.storyboard in Resources */,
 				B283FA1C1C9262B900312DB6 /* Assets.xcassets in Resources */,
-				B283FA171C9262B900312DB6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +437,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B283FA141C9262B900312DB6 /* ViewController.m in Sources */,
+				B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */,
+				B29795B01C92E2E400A80CC9 /* main.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
-				B283FA111C9262B900312DB6 /* AppDelegate.m in Sources */,
-				B283FA0E1C9262B900312DB6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,25 +473,6 @@
 			targetProxy = B283FA311C9262B900312DB6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B283FA151C9262B900312DB6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B283FA161C9262B900312DB6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B283FA1D1C9262B900312DB6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B283FA1E1C9262B900312DB6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B283FA371C9262B900312DB6 /* Debug */ = {
@@ -417,10 +561,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "仿百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pandasheng.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -428,10 +575,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "仿百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.pandasheng.------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -502,6 +652,7 @@
 				B283FA3B1C9262B900312DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B283FA3C1C9262B900312DB6 /* Build configuration list for PBXNativeTarget "仿百思不得姐Tests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +661,7 @@
 				B283FA3E1C9262B900312DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B283FA3F1C9262B900312DB6 /* Build configuration list for PBXNativeTarget "仿百思不得姐UITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +670,7 @@
 				B283FA411C9262B900312DB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
