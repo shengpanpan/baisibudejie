@@ -13,6 +13,7 @@
 #import "SPMeViewController.h"
 #import "SPPublishController.h"
 #import "UIImage+originalImage.h"
+#import "SPCustomTabBar.h"
 
 @interface SPTabBarController ()
 
@@ -39,6 +40,9 @@
     
     //初始化子自控制器
     [self setUpAllChildController];
+    
+    //初始化自定义tabbar
+    [self setUpCustomTabBar];
  
   
 }
@@ -88,6 +92,14 @@
 }
 
 
+#pragma 初始化自定义tabbar
+- (void)setUpCustomTabBar{
+
+    SPCustomTabBar *customTabBar = [[SPCustomTabBar alloc] init];
+    
+    [self setValue:customTabBar forKey:@"tabBar"];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
