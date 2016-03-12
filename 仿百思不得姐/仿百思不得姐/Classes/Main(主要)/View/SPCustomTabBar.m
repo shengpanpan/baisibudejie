@@ -36,7 +36,6 @@
 
     if (self = [super initWithFrame:frame]) {
         self.backgroundImage = [UIImage originalImageWithName:@"tabbar_light"];
-        [UIImage imageNamed:]
     }
     
     return self;
