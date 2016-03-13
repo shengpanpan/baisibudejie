@@ -1,50 +1,37 @@
 //
-//  SPMeViewController.m
+//  SPSettingViewController.m
 //  仿百思不得姐
 //
-//  Created by 风 on 16/3/11.
+//  Created by 风 on 16/3/12.
 //  Copyright © 2016年 panda.sheng. All rights reserved.
 //
 
-#import "SPMeViewController.h"
-#import "UIImage+originalImage.h"
-#import "UIBarButtonItem+SPItem.h"
 #import "SPSettingViewController.h"
-@interface SPMeViewController ()
+
+@interface SPSettingViewController ()
 
 @end
 
-@implementation SPMeViewController
+@implementation SPSettingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.view.backgroundColor = [UIColor whiteColor];
     
-    UIBarButtonItem *settingItem = [UIBarButtonItem barButtonItemWithImage:[UIImage originalImageWithName:@"mine-setting-icon"] withHighImage:[UIImage originalImageWithName:@"mine-setting-icon-click"] withTarget:self withAction:@selector(settingBtnClick)];
-    
-    UIBarButtonItem *nightItem = [UIBarButtonItem barButtonItemWithImage:[UIImage imageNamed:@"mine-moon-icon"] withSelectedImage:[UIImage imageNamed:@"mine-sun-icon-click"] withTarget:self withAction:@selector(nightBtnClick:)];
-
-    self.navigationItem.rightBarButtonItems = @[settingItem,nightItem];
-    
-    self.navigationItem.title = @"我的";
+   self.navigationItem.title = @"设置";
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"jusp" style:0 target:self action:@selector(jump)];
 }
 
-- (void)settingBtnClick{
+
+- (void)jump{
 
     SPLogFunc;
     
-    SPSettingViewController *vc = [[SPSettingViewController alloc] init];
+    UIViewController *vc = [[UIViewController alloc] init];
+    
+    vc.view.backgroundColor = [UIColor redColor];
     
     [self.navigationController pushViewController:vc animated:YES];
 }
-
-- (void)nightBtnClick:(UIButton *)button{
-
-    SPLogFunc;
-}
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

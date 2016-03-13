@@ -7,6 +7,8 @@
 //
 
 #import "SPNewController.h"
+#import "UIImage+originalImage.h"
+#import "UIBarButtonItem+SPItem.h"
 
 @interface SPNewController ()
 
@@ -18,8 +20,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor yellowColor];
+    
+    //创建左边按钮；
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage originalImageWithName:@"MainTagSubIcon"] withHighImage:[UIImage originalImageWithName:@"MainTagSubIconClick"] withTarget:self withAction:@selector(tagClick)];
+    
+    
+    //中间视图
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage originalImageWithName:@"MainTitle"]];
 }
 
+- (void)tagClick{
+
+    SPLogFunc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

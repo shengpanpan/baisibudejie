@@ -7,6 +7,8 @@
 //
 
 #import "SPFriendTrendViewController.h"
+#import "UIImage+originalImage.h"
+#import "UIBarButtonItem+SPItem.h"
 
 @interface SPFriendTrendViewController ()
 
@@ -18,8 +20,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor purpleColor];
+    
+    //创建左边按钮；
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage originalImageWithName:@"friendsRecommentIcon"] withHighImage:[UIImage originalImageWithName:@"friendsRecommentIcon-click"] withTarget:self withAction:@selector(tagClick)];
+    
+    
+    //中间视图
+    self.navigationItem.title = @"我的关注";
 }
 
+- (void)tagClick{
+
+    SPLogFunc;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

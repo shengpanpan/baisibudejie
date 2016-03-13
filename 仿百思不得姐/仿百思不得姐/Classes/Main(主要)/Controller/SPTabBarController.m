@@ -14,6 +14,7 @@
 #import "SPPublishController.h"
 #import "UIImage+originalImage.h"
 #import "SPCustomTabBar.h"
+#import "SPNavigationController.h"
 
 @interface SPTabBarController ()
 
@@ -34,7 +35,6 @@
     
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -46,7 +46,6 @@
  
   
 }
-
 
 #pragma 初始化子自控制器
 - (void)setUpAllChildController{
@@ -70,12 +69,11 @@
     
 }
 
-
 #pragma 添加控制器
 - (void)setUpChildControllerWithController:(UIViewController *)controller withTitle:(NSString *)title withImageName:(NSString *)name withSelectedImageName:(NSString *)selectedName{
 
     //1.1初始为导航控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:controller];
+    SPNavigationController *nav = [[SPNavigationController alloc] initWithRootViewController:controller];
     
     //设置tabBarIten的属性
     nav.tabBarItem.title = title;
@@ -91,7 +89,6 @@
     
 }
 
-
 #pragma 初始化自定义tabbar
 - (void)setUpCustomTabBar{
 
@@ -100,6 +97,7 @@
     [self setValue:customTabBar forKey:@"tabBar"];
     
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

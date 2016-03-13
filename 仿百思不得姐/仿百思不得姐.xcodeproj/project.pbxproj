@@ -22,6 +22,9 @@
 		B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */; };
 		B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */; };
 		B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC15751C92F48100F06343 /* UIImage+originalImage.m */; };
+		B2FC0F1B1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F1A1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m */; };
+		B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F1D1C94649600847EC1 /* SPNavigationController.m */; };
+		B2FC0F2B1C946A2500847EC1 /* SPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F2A1C946A2500847EC1 /* SPSettingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,12 @@
 		B2A9BA721C931867002FAA1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		B2DC15741C92F48100F06343 /* UIImage+originalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+originalImage.h"; sourceTree = "<group>"; };
 		B2DC15751C92F48100F06343 /* UIImage+originalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+originalImage.m"; sourceTree = "<group>"; };
+		B2FC0F191C9453EF00847EC1 /* UIBarButtonItem+SPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SPItem.h"; sourceTree = "<group>"; };
+		B2FC0F1A1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SPItem.m"; sourceTree = "<group>"; };
+		B2FC0F1C1C94649600847EC1 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
+		B2FC0F1D1C94649600847EC1 /* SPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNavigationController.m; sourceTree = "<group>"; };
+		B2FC0F291C946A2500847EC1 /* SPSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSettingViewController.h; sourceTree = "<group>"; };
+		B2FC0F2A1C946A2500847EC1 /* SPSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSettingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +176,7 @@
 				B297959B1C92E2E400A80CC9 /* FriendTrend(关注) */,
 				B297959F1C92E2E400A80CC9 /* Me(我) */,
 				B29795AB1C92E2E400A80CC9 /* Publisth(发布) */,
+				B2FC0F1F1C94696200847EC1 /* Setting(设置) */,
 				B29795A71C92E2E400A80CC9 /* Other */,
 			);
 			path = Classes;
@@ -365,6 +375,8 @@
 			children = (
 				B29795B61C92E6E100A80CC9 /* SPTabBarController.h */,
 				B29795B71C92E6E100A80CC9 /* SPTabBarController.m */,
+				B2FC0F1C1C94649600847EC1 /* SPNavigationController.h */,
+				B2FC0F1D1C94649600847EC1 /* SPNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -390,10 +402,46 @@
 			children = (
 				B2DC15741C92F48100F06343 /* UIImage+originalImage.h */,
 				B2DC15751C92F48100F06343 /* UIImage+originalImage.m */,
+				B2FC0F191C9453EF00847EC1 /* UIBarButtonItem+SPItem.h */,
+				B2FC0F1A1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m */,
 				B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */,
 				B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		B2FC0F1F1C94696200847EC1 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				B2FC0F201C94696200847EC1 /* Controller */,
+				B2FC0F211C94696200847EC1 /* Model */,
+				B2FC0F221C94696200847EC1 /* View */,
+			);
+			name = "Setting(设置)";
+			path = "仿百思不得姐/Classes/Setting(设置)";
+			sourceTree = SOURCE_ROOT;
+		};
+		B2FC0F201C94696200847EC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2FC0F291C946A2500847EC1 /* SPSettingViewController.h */,
+				B2FC0F2A1C946A2500847EC1 /* SPSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B2FC0F211C94696200847EC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B2FC0F221C94696200847EC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -525,17 +573,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2FC0F1B1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m in Sources */,
 				B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */,
 				B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */,
 				B29795B01C92E2E400A80CC9 /* main.m in Sources */,
 				B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */,
 				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
+				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
 				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
 				B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */,
 				B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */,
 				B29795BE1C92E7BF00A80CC9 /* SPEssenceViewController.m in Sources */,
+				B2FC0F2B1C946A2500847EC1 /* SPSettingViewController.m in Sources */,
 				B29795C11C92E88200A80CC9 /* SPFriendTrendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
