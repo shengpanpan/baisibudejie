@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		22423EA42EF736C39915F18D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E842F311E894EC9FA36E1DA /* libPods.a */; };
+		B203F7531C95A3F70077C828 /* SPAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7521C95A3F70077C828 /* SPAllViewController.m */; };
+		B203F7561C95A40F0077C828 /* SPVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7551C95A40F0077C828 /* SPVideoViewController.m */; };
+		B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7581C95A4230077C828 /* SPVoiceViewController.m */; };
+		B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F75B1C95A4360077C828 /* SPPictureViewController.m */; };
+		B203F75F1C95A4670077C828 /* SJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F75E1C95A4670077C828 /* SJokeViewController.m */; };
 		B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D22421C950A9E0028B497 /* SPADViewController.m */; };
 		B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26D22431C950A9E0028B497 /* SPADViewController.xib */; };
 		B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D22591C9514800028B497 /* LaunchImage-568h@2x.png */; };
@@ -31,6 +36,7 @@
 		B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C91C92E92000A80CC9 /* SPPublishController.m */; };
 		B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */; };
 		B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */; };
+		B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C0167C1C9553C600274E0C /* SPAdItem.m */; };
 		B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC15751C92F48100F06343 /* UIImage+originalImage.m */; };
 		B2FC0F1B1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F1A1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m */; };
 		B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F1D1C94649600847EC1 /* SPNavigationController.m */; };
@@ -57,6 +63,16 @@
 /* Begin PBXFileReference section */
 		1E842F311E894EC9FA36E1DA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8448C4166FAD148D423E08F0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B203F7511C95A3F70077C828 /* SPAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAllViewController.h; sourceTree = "<group>"; };
+		B203F7521C95A3F70077C828 /* SPAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAllViewController.m; sourceTree = "<group>"; };
+		B203F7541C95A40F0077C828 /* SPVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVideoViewController.h; sourceTree = "<group>"; };
+		B203F7551C95A40F0077C828 /* SPVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVideoViewController.m; sourceTree = "<group>"; };
+		B203F7571C95A4230077C828 /* SPVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPVoiceViewController.h; sourceTree = "<group>"; };
+		B203F7581C95A4230077C828 /* SPVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVoiceViewController.m; sourceTree = "<group>"; };
+		B203F75A1C95A4360077C828 /* SPPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPictureViewController.h; sourceTree = "<group>"; };
+		B203F75B1C95A4360077C828 /* SPPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPictureViewController.m; sourceTree = "<group>"; };
+		B203F75D1C95A4670077C828 /* SJokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJokeViewController.h; sourceTree = "<group>"; };
+		B203F75E1C95A4670077C828 /* SJokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJokeViewController.m; sourceTree = "<group>"; };
 		B26D22411C950A9E0028B497 /* SPADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPADViewController.h; sourceTree = "<group>"; };
 		B26D22421C950A9E0028B497 /* SPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPADViewController.m; sourceTree = "<group>"; };
 		B26D22431C950A9E0028B497 /* SPADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPADViewController.xib; sourceTree = "<group>"; };
@@ -97,6 +113,8 @@
 		B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SPExtension.h"; sourceTree = "<group>"; };
 		B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SPExtension.m"; sourceTree = "<group>"; };
 		B2A9BA721C931867002FAA1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2C0167B1C9553C600274E0C /* SPAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdItem.h; sourceTree = "<group>"; };
+		B2C0167C1C9553C600274E0C /* SPAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAdItem.m; sourceTree = "<group>"; };
 		B2DC15741C92F48100F06343 /* UIImage+originalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+originalImage.h"; sourceTree = "<group>"; };
 		B2DC15751C92F48100F06343 /* UIImage+originalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+originalImage.m"; sourceTree = "<group>"; };
 		B2FC0F191C9453EF00847EC1 /* UIBarButtonItem+SPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SPItem.h"; sourceTree = "<group>"; };
@@ -151,6 +169,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B203F7501C95A31B0077C828 /* titleChildVc(子控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				B203F7511C95A3F70077C828 /* SPAllViewController.h */,
+				B203F7521C95A3F70077C828 /* SPAllViewController.m */,
+				B203F7541C95A40F0077C828 /* SPVideoViewController.h */,
+				B203F7551C95A40F0077C828 /* SPVideoViewController.m */,
+				B203F7571C95A4230077C828 /* SPVoiceViewController.h */,
+				B203F7581C95A4230077C828 /* SPVoiceViewController.m */,
+				B203F75A1C95A4360077C828 /* SPPictureViewController.h */,
+				B203F75B1C95A4360077C828 /* SPPictureViewController.m */,
+				B203F75D1C95A4670077C828 /* SJokeViewController.h */,
+				B203F75E1C95A4670077C828 /* SJokeViewController.m */,
+			);
+			path = "titleChildVc(子控制器)";
+			sourceTree = "<group>";
+		};
 		B26D223D1C950A580028B497 /* AD(广告) */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +209,8 @@
 		B26D223F1C950A580028B497 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2C0167B1C9553C600274E0C /* SPAdItem.h */,
+				B2C0167C1C9553C600274E0C /* SPAdItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,8 +325,9 @@
 		B29795981C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B29795BC1C92E7BF00A80CC9 /* SPEssenceViewController.h */,
 				B29795BD1C92E7BF00A80CC9 /* SPEssenceViewController.m */,
+				B29795BC1C92E7BF00A80CC9 /* SPEssenceViewController.h */,
+				B203F7501C95A31B0077C828 /* titleChildVc(子控制器) */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -730,17 +768,23 @@
 				B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */,
 				B29795B01C92E2E400A80CC9 /* main.m in Sources */,
 				B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */,
+				B203F7531C95A3F70077C828 /* SPAllViewController.m in Sources */,
+				B203F7561C95A40F0077C828 /* SPVideoViewController.m in Sources */,
 				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
 				B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */,
 				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
+				B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */,
+				B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */,
 				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
+				B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */,
 				B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */,
 				B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */,
 				B29795BE1C92E7BF00A80CC9 /* SPEssenceViewController.m in Sources */,
 				B2FC0F2B1C946A2500847EC1 /* SPSettingViewController.m in Sources */,
 				B29795C11C92E88200A80CC9 /* SPFriendTrendViewController.m in Sources */,
+				B203F75F1C95A4670077C828 /* SJokeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

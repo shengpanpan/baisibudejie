@@ -8,7 +8,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SPADViewController">
             <connections>
                 <outlet property="launchImageView" destination="rr4-s6-gdd" id="x3g-AA-8xk"/>
-                <outlet property="placeHolderView" destination="NLZ-Fy-zb1" id="yhV-oQ-PRk"/>
+                <outlet property="placeHolderView" destination="blB-L9-mY8" id="KMz-LH-3U8"/>
+                <outlet property="timerButton" destination="kMa-nN-VBp" id="ZTE-Jz-XJ2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="tyX-y1-5MF"/>
             </connections>
         </placeholder>
@@ -20,32 +21,39 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rr4-s6-gdd">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                 </imageView>
-                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NLZ-Fy-zb1">
-                    <rect key="frame" x="-23" y="0.0" width="600" height="600"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blB-L9-mY8">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfr-py-gYI">
-                            <rect key="frame" x="525" y="20" width="55" height="30"/>
-                            <state key="normal" title="跳过3秒"/>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMa-nN-VBp">
+                            <rect key="frame" x="518" y="15" width="67" height="30"/>
+                            <color key="backgroundColor" red="0.23760016025641029" green="0.23760016025641029" blue="0.23760016025641029" alpha="0.6079741379310345" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="跳转(5)秒">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="goToMainVC:" destination="-1" eventType="touchUpInside" id="bEo-Su-Cj7"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="Xfr-py-gYI" secondAttribute="trailing" constant="20" id="vGW-jD-uPn"/>
-                        <constraint firstItem="Xfr-py-gYI" firstAttribute="top" secondItem="NLZ-Fy-zb1" secondAttribute="top" constant="20" id="wwV-Se-Nsl"/>
+                        <constraint firstAttribute="trailing" secondItem="kMa-nN-VBp" secondAttribute="trailing" constant="15" id="pac-aV-AcU"/>
+                        <constraint firstItem="kMa-nN-VBp" firstAttribute="top" secondItem="blB-L9-mY8" secondAttribute="top" constant="15" id="z6w-es-Zaj"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="0.5530609035170797" blue="0.898419700810273" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="NLZ-Fy-zb1" secondAttribute="trailing" id="16B-11-sYS"/>
-                <constraint firstItem="NLZ-Fy-zb1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Kv7-fw-fix"/>
-                <constraint firstItem="NLZ-Fy-zb1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bJb-hS-7qd"/>
-                <constraint firstAttribute="bottom" secondItem="NLZ-Fy-zb1" secondAttribute="bottom" id="enM-UX-Joj"/>
+                <constraint firstAttribute="bottom" secondItem="blB-L9-mY8" secondAttribute="bottom" id="5GG-eZ-h4W"/>
+                <constraint firstAttribute="trailing" secondItem="blB-L9-mY8" secondAttribute="trailing" id="OfM-Nu-n4o"/>
+                <constraint firstItem="blB-L9-mY8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hel-Z0-z39"/>
+                <constraint firstItem="blB-L9-mY8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="iZc-Uy-jfy"/>
                 <constraint firstItem="rr4-s6-gdd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ofU-Cb-bJh"/>
                 <constraint firstAttribute="trailing" secondItem="rr4-s6-gdd" secondAttribute="trailing" id="q48-tq-fqV"/>
                 <constraint firstAttribute="bottom" secondItem="rr4-s6-gdd" secondAttribute="bottom" id="udp-qC-pSp"/>
                 <constraint firstItem="rr4-s6-gdd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yLJ-lF-vWe"/>
             </constraints>
+            <point key="canvasLocation" x="528" y="-285"/>
         </view>
     </objects>
 </document>
