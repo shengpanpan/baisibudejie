@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D22421C950A9E0028B497 /* SPADViewController.m */; };
+		B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26D22431C950A9E0028B497 /* SPADViewController.xib */; };
+		B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D22591C9514800028B497 /* LaunchImage-568h@2x.png */; };
+		B26D22611C9514800028B497 /* LaunchImage-700-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D225A1C9514800028B497 /* LaunchImage-700-568h@2x.png */; };
+		B26D22621C9514800028B497 /* LaunchImage-700@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D225B1C9514800028B497 /* LaunchImage-700@2x.png */; };
+		B26D22631C9514800028B497 /* LaunchImage-800-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D225C1C9514800028B497 /* LaunchImage-800-667h@2x.png */; };
+		B26D22641C9514800028B497 /* LaunchImage-800-Portrait-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D225D1C9514800028B497 /* LaunchImage-800-Portrait-736h@3x.png */; };
+		B26D22651C9514800028B497 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D225E1C9514800028B497 /* LaunchImage.png */; };
+		B26D22661C9514800028B497 /* LaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D225F1C9514800028B497 /* LaunchImage@2x.png */; };
 		B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B283FA181C9262B900312DB6 /* ______.xcdatamodeld */; };
 		B283FA1C1C9262B900312DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B283FA1B1C9262B900312DB6 /* Assets.xcassets */; };
 		B283FA2A1C9262B900312DB6 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B283FA291C9262B900312DB6 /* ______Tests.m */; };
@@ -45,6 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B26D22411C950A9E0028B497 /* SPADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPADViewController.h; sourceTree = "<group>"; };
+		B26D22421C950A9E0028B497 /* SPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPADViewController.m; sourceTree = "<group>"; };
+		B26D22431C950A9E0028B497 /* SPADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPADViewController.xib; sourceTree = "<group>"; };
+		B26D22591C9514800028B497 /* LaunchImage-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		B26D225A1C9514800028B497 /* LaunchImage-700-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700-568h@2x.png"; sourceTree = "<group>"; };
+		B26D225B1C9514800028B497 /* LaunchImage-700@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-700@2x.png"; sourceTree = "<group>"; };
+		B26D225C1C9514800028B497 /* LaunchImage-800-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-667h@2x.png"; sourceTree = "<group>"; };
+		B26D225D1C9514800028B497 /* LaunchImage-800-Portrait-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-800-Portrait-736h@3x.png"; sourceTree = "<group>"; };
+		B26D225E1C9514800028B497 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		B26D225F1C9514800028B497 /* LaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage@2x.png"; sourceTree = "<group>"; };
 		B283FA091C9262B900312DB6 /* 仿百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B283FA191C9262B900312DB6 /* ______.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "______.xcdatamodel"; sourceTree = "<group>"; };
 		B283FA1B1C9262B900312DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -110,6 +129,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B26D223D1C950A580028B497 /* AD(广告) */ = {
+			isa = PBXGroup;
+			children = (
+				B26D223E1C950A580028B497 /* Controller */,
+				B26D223F1C950A580028B497 /* Model */,
+				B26D22401C950A580028B497 /* View */,
+			);
+			path = "AD(广告)";
+			sourceTree = "<group>";
+		};
+		B26D223E1C950A580028B497 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B26D22411C950A9E0028B497 /* SPADViewController.h */,
+				B26D22421C950A9E0028B497 /* SPADViewController.m */,
+				B26D22431C950A9E0028B497 /* SPADViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B26D223F1C950A580028B497 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B26D22401C950A580028B497 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B26D22581C9514800028B497 /* 启动图片 */ = {
+			isa = PBXGroup;
+			children = (
+				B26D22591C9514800028B497 /* LaunchImage-568h@2x.png */,
+				B26D225A1C9514800028B497 /* LaunchImage-700-568h@2x.png */,
+				B26D225B1C9514800028B497 /* LaunchImage-700@2x.png */,
+				B26D225C1C9514800028B497 /* LaunchImage-800-667h@2x.png */,
+				B26D225D1C9514800028B497 /* LaunchImage-800-Portrait-736h@3x.png */,
+				B26D225E1C9514800028B497 /* LaunchImage.png */,
+				B26D225F1C9514800028B497 /* LaunchImage@2x.png */,
+			);
+			path = "启动图片";
+			sourceTree = "<group>";
+		};
 		B283FA001C9262B900312DB6 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +209,7 @@
 		B283FA0C1C9262B900312DB6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B26D22581C9514800028B497 /* 启动图片 */,
 				B283FA1B1C9262B900312DB6 /* Assets.xcassets */,
 				B283FA181C9262B900312DB6 /* ______.xcdatamodeld */,
 				B283FA201C9262B900312DB6 /* Info.plist */,
@@ -177,6 +245,7 @@
 				B297959F1C92E2E400A80CC9 /* Me(我) */,
 				B29795AB1C92E2E400A80CC9 /* Publisth(发布) */,
 				B2FC0F1F1C94696200847EC1 /* Setting(设置) */,
+				B26D223D1C950A580028B497 /* AD(广告) */,
 				B29795A71C92E2E400A80CC9 /* Other */,
 			);
 			path = Classes;
@@ -548,7 +617,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26D22651C9514800028B497 /* LaunchImage.png in Resources */,
+				B26D22661C9514800028B497 /* LaunchImage@2x.png in Resources */,
+				B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */,
+				B26D22631C9514800028B497 /* LaunchImage-800-667h@2x.png in Resources */,
+				B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */,
+				B26D22621C9514800028B497 /* LaunchImage-700@2x.png in Resources */,
+				B26D22611C9514800028B497 /* LaunchImage-700-568h@2x.png in Resources */,
 				B283FA1C1C9262B900312DB6 /* Assets.xcassets in Resources */,
+				B26D22641C9514800028B497 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +656,7 @@
 				B29795B01C92E2E400A80CC9 /* main.m in Sources */,
 				B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */,
 				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
+				B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */,
 				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,

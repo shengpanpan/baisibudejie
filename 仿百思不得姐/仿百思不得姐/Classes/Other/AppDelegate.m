@@ -29,6 +29,7 @@
 
 #import "AppDelegate.h"
 #import "SPTabBarController.h"
+#import "SPADViewController.h"
 
 @interface AppDelegate ()
 
@@ -38,13 +39,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // 创建控制器
+    // 创建tabbar控制器
     SPTabBarController *tabBarVC = [[SPTabBarController alloc] init];
     tabBarVC.view.backgroundColor = [UIColor redColor];
     
+    //创建广告AD控制器
+    SPADViewController *adVC = [[SPADViewController alloc] init];
+    
     //设置window
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = tabBarVC;
+    self.window.rootViewController = adVC;
     [self.window makeKeyAndVisible];
     
     return YES;
