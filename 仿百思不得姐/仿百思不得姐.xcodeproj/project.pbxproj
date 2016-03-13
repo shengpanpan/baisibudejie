@@ -12,7 +12,9 @@
 		B203F7561C95A40F0077C828 /* SPVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7551C95A40F0077C828 /* SPVideoViewController.m */; };
 		B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7581C95A4230077C828 /* SPVoiceViewController.m */; };
 		B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F75B1C95A4360077C828 /* SPPictureViewController.m */; };
-		B203F75F1C95A4670077C828 /* SJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F75E1C95A4670077C828 /* SJokeViewController.m */; };
+		B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7611C95A60C0077C828 /* SPJokeViewController.m */; };
+		B203F7651C95AC930077C828 /* SPConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7641C95AC930077C828 /* SPConst.m */; };
+		B203F7681C95B3BB0077C828 /* SPTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7671C95B3BB0077C828 /* SPTitleButton.m */; };
 		B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D22421C950A9E0028B497 /* SPADViewController.m */; };
 		B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26D22431C950A9E0028B497 /* SPADViewController.xib */; };
 		B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D22591C9514800028B497 /* LaunchImage-568h@2x.png */; };
@@ -71,8 +73,12 @@
 		B203F7581C95A4230077C828 /* SPVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPVoiceViewController.m; sourceTree = "<group>"; };
 		B203F75A1C95A4360077C828 /* SPPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPPictureViewController.h; sourceTree = "<group>"; };
 		B203F75B1C95A4360077C828 /* SPPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPPictureViewController.m; sourceTree = "<group>"; };
-		B203F75D1C95A4670077C828 /* SJokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJokeViewController.h; sourceTree = "<group>"; };
-		B203F75E1C95A4670077C828 /* SJokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJokeViewController.m; sourceTree = "<group>"; };
+		B203F7601C95A60C0077C828 /* SPJokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPJokeViewController.h; sourceTree = "<group>"; };
+		B203F7611C95A60C0077C828 /* SPJokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPJokeViewController.m; sourceTree = "<group>"; };
+		B203F7631C95AC930077C828 /* SPConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPConst.h; path = Category/SPConst.h; sourceTree = "<group>"; };
+		B203F7641C95AC930077C828 /* SPConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPConst.m; path = Category/SPConst.m; sourceTree = "<group>"; };
+		B203F7661C95B3BB0077C828 /* SPTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTitleButton.h; sourceTree = "<group>"; };
+		B203F7671C95B3BB0077C828 /* SPTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTitleButton.m; sourceTree = "<group>"; };
 		B26D22411C950A9E0028B497 /* SPADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPADViewController.h; sourceTree = "<group>"; };
 		B26D22421C950A9E0028B497 /* SPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPADViewController.m; sourceTree = "<group>"; };
 		B26D22431C950A9E0028B497 /* SPADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPADViewController.xib; sourceTree = "<group>"; };
@@ -180,8 +186,8 @@
 				B203F7581C95A4230077C828 /* SPVoiceViewController.m */,
 				B203F75A1C95A4360077C828 /* SPPictureViewController.h */,
 				B203F75B1C95A4360077C828 /* SPPictureViewController.m */,
-				B203F75D1C95A4670077C828 /* SJokeViewController.h */,
-				B203F75E1C95A4670077C828 /* SJokeViewController.m */,
+				B203F7601C95A60C0077C828 /* SPJokeViewController.h */,
+				B203F7611C95A60C0077C828 /* SPJokeViewController.m */,
 			);
 			path = "titleChildVc(子控制器)";
 			sourceTree = "<group>";
@@ -325,8 +331,8 @@
 		B29795981C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B29795BD1C92E7BF00A80CC9 /* SPEssenceViewController.m */,
 				B29795BC1C92E7BF00A80CC9 /* SPEssenceViewController.h */,
+				B29795BD1C92E7BF00A80CC9 /* SPEssenceViewController.m */,
 				B203F7501C95A31B0077C828 /* titleChildVc(子控制器) */,
 			);
 			path = Controller;
@@ -342,6 +348,8 @@
 		B297959A1C92E2E400A80CC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B203F7661C95B3BB0077C828 /* SPTitleButton.h */,
+				B203F7671C95B3BB0077C828 /* SPTitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -453,6 +461,8 @@
 				B2A9BA721C931867002FAA1F /* PrefixHeader.pch */,
 				B29795A81C92E2E400A80CC9 /* AppDelegate.h */,
 				B29795A91C92E2E400A80CC9 /* AppDelegate.m */,
+				B203F7631C95AC930077C828 /* SPConst.h */,
+				B203F7641C95AC930077C828 /* SPConst.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -766,6 +776,7 @@
 				B2FC0F1B1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m in Sources */,
 				B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */,
 				B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */,
+				B203F7681C95B3BB0077C828 /* SPTitleButton.m in Sources */,
 				B29795B01C92E2E400A80CC9 /* main.m in Sources */,
 				B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */,
 				B203F7531C95A3F70077C828 /* SPAllViewController.m in Sources */,
@@ -773,18 +784,19 @@
 				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
 				B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */,
 				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
+				B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
 				B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */,
 				B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */,
 				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
+				B203F7651C95AC930077C828 /* SPConst.m in Sources */,
 				B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */,
 				B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */,
 				B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */,
 				B29795BE1C92E7BF00A80CC9 /* SPEssenceViewController.m in Sources */,
 				B2FC0F2B1C946A2500847EC1 /* SPSettingViewController.m in Sources */,
 				B29795C11C92E88200A80CC9 /* SPFriendTrendViewController.m in Sources */,
-				B203F75F1C95A4670077C828 /* SJokeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

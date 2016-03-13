@@ -1,23 +1,22 @@
-
 //
-//  SJokeViewController.m
+//  SPJokeViewController.m
 //  仿百思不得姐
 //
 //  Created by 风 on 16/3/13.
 //  Copyright © 2016年 panda.sheng. All rights reserved.
 //
 
-#import "SJokeViewController.h"
+#import "SPJokeViewController.h"
 
-@interface SJokeViewController ()
+@interface SPJokeViewController ()
 
 @end
 
-@implementation SJokeViewController
+@implementation SPJokeViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+       self.view.backgroundColor = SPRandomColor;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

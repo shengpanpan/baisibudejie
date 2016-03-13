@@ -1,5 +1,5 @@
 //
-//  SJokeViewController.h
+//  SPJokeViewController.h
 //  仿百思不得姐
 //
 //  Created by 风 on 16/3/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SJokeViewController : UITableViewController
+@interface SPJokeViewController : UITableViewController
 
 @end
