@@ -50,6 +50,11 @@
     }
     
 }
+
+#pragma 发送网络请求
+- (void)httpSend{
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
