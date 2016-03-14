@@ -16,15 +16,13 @@
 #import "SPJokeViewController.h"
 #import "SPTitleButton.h"
 
-@interface SPEssenceViewController ()
+@interface SPEssenceViewController ()<UIScrollViewDelegate>
 @property (nonatomic, strong) UIView *titleView;
 @property (nonatomic, strong) UIButton *selectedButton;
 @property (nonatomic, strong) UIScrollView *contentView;
-
 @end
 
 @implementation SPEssenceViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -39,6 +37,10 @@
     
     //3.添加contentView视图
     [self setUpContentView];
+    
+    //4.设置代理监听contentView滚动
+    self.contentView.delegate = self;
+    
    }
 
 /***********childVC************/
@@ -88,7 +90,7 @@
     self.titleView = titleView;
     
     //设置frame
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < self.childViewControllers.count; i++) {
         SPTitleButton *button = [SPTitleButton buttonWithType:UIButtonTypeCustom];
         
         CGFloat buttonY = 0;
@@ -106,6 +108,7 @@
         [self.titleView addSubview:button];
         
     }
+   
 }
 
 #pragma titleButton点击后的处理方法
@@ -115,17 +118,30 @@
     //选中按钮
     [self selectedButton:button];
     
+    //选中按钮，跳转到对应的控制器
+    [self selectedControll:button];
+    
+    //设置内容视图的偏移量
+    self.contentView.contentOffset = CGPointMake(button.tag*(self.contentView.bounds.size.width), 0);
+ 
+}
+
+#pragma 选中控制器并添加视图
+- (void)selectedControll:(UIButton *)button{
+
     //判断当前控制器的视图是否已经家再过
-     UITableViewController *selectedVC = self.childViewControllers[button.tag];
+    UITableViewController *selectedVC = self.childViewControllers[button.tag];
     
-    if([selectedVC isViewLoaded]) return;
-   
-    selectedVC.view.frame = self.contentView.bounds;
+    if(selectedVC.view.superview) return;
+    
+    //设置视图的位置
+    CGFloat viewX = button.tag*(self.contentView.bounds.size.width);
+    CGFloat viewY = 0;
+    CGFloat viewW = self.contentView.bounds.size.width;
+    CGFloat viewH = self.contentView.bounds.size.height;
+    selectedVC.view.frame = CGRectMake(viewX, viewY, viewW, viewH);
+    
     [self.contentView addSubview:selectedVC.view];
-    
-    
-   
-    
     
 }
 
@@ -173,9 +189,41 @@
   
     //禁止系统自动设置内边距
     self.automaticallyAdjustsScrollViewInsets = NO;
+
     
+    //选中全部按钮
+    [self titleButtonClick:self.titleView.subviews[0]];
     
+}
+
+#pragma UIScrollViewDelegate
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+
+    SPLogFunc;
+    //1.获得X偏移量
+    CGFloat contentX = scrollView.contentOffset.x;
     
+    //2.计算视图对应的位置
+    NSInteger i = contentX/self.contentView.sp_width;
+    
+    //点击对应i值得按钮
+    [self titleButtonClick:self.titleView.subviews[i]];
+    
+}
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView{
+
+    SPLogFunc;
+    // 取出对应的子控制器
+    int index = scrollView.contentOffset.x / scrollView.sp_width;
+    UIViewController *willShowChildVc = self.childViewControllers[index];
+    
+    // 如果控制器的view已经被创建过，就直接返回
+    if (willShowChildVc.isViewLoaded) return;
+    
+    // 添加子控制器的view到scrollView身上
+    willShowChildVc.view.frame = scrollView.bounds;
+    [scrollView addSubview:willShowChildVc.view];
+
 }
 
 /***********navbar**************/
@@ -194,16 +242,19 @@
     
 }
 
+#pragma 点击导航栏左边按钮
 - (void)leftBarButtonClick{
 
     SPLogFunc;
 }
 
+#pragma 点击导航栏的右边的按钮
 - (void)rightBarButtonClick{
     
     SPLogFunc;
 }
 
+#pragma 内存泄露
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
