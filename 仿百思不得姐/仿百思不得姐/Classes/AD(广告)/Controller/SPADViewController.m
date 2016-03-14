@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *timerButton;
 @property (strong, nonatomic) UIImageView *ADImageView;
 @property (strong,nonatomic) NSTimer *timer;
+@property (strong, nonatomic) SPAdItem *adItem;
 
 @end
 
@@ -97,9 +98,9 @@
         //1.获取ad的字典
         NSDictionary *adDic = [responseObject[@"ad"] lastObject];
         //2.将字典转换为模型
-        SPAdItem *adItem = [SPAdItem mj_objectWithKeyValues:adDic];
+        self.adItem = [SPAdItem mj_objectWithKeyValues:adDic];
         //3.设置ad
-        if (adItem.w > 0) {
+        if (_adItem.w > 0) {
             
 //            adItem.h = SPScreenW/(adItem.w)*adItem.h;
 //            NSLog(@"%f%f",adItem.w,adItem.h);
@@ -107,7 +108,7 @@
             self.ADImageView.frame = CGRectMake(0, 0, SPScreenW, SPScreenH);
             
             //加载图片
-            [self.ADImageView sd_setImageWithURL:[NSURL URLWithString:adItem.w_picurl]];
+            [self.ADImageView sd_setImageWithURL:[NSURL URLWithString:_adItem.w_picurl]];
             
             //将图片添加到父类视图
             [_placeHolderView insertSubview:_ADImageView atIndex:0];
@@ -175,10 +176,10 @@
     
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma 跳转到广告界面
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
 
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.adItem.ori_curl]];
+}
 
 @end

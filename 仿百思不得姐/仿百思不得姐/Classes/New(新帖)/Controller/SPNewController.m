@@ -9,6 +9,7 @@
 #import "SPNewController.h"
 #import "UIImage+originalImage.h"
 #import "UIBarButtonItem+SPItem.h"
+#import "SPTagsViewController.h"
 
 @interface SPNewController ()
 
@@ -18,34 +19,32 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor yellowColor];
+    
+    //初始化NAV
+    [self setUpNavBarButtonItem];
+   
+}
+
+#pragma 创建NAV左边按钮和中间视图
+- (void)setUpNavBarButtonItem{
     
     //创建左边按钮；
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage originalImageWithName:@"MainTagSubIcon"] withHighImage:[UIImage originalImageWithName:@"MainTagSubIconClick"] withTarget:self withAction:@selector(tagClick)];
     
-    
     //中间视图
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage originalImageWithName:@"MainTitle"]];
+    
 }
 
+#pragma 点击调到标签推荐的界面
 - (void)tagClick{
 
     SPLogFunc;
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    SPTagsViewController *tagVC = [[SPTagsViewController alloc] init];
+    
+    [self.navigationController pushViewController:tagVC animated:YES];
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

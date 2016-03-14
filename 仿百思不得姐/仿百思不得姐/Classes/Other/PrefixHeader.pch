@@ -18,6 +18,8 @@
 #define iphone4 (SPScreenH == 480)
 /***********屏幕适配*************/
 
+// 弱引用
+#define SPWeakSelf __weak typeof(self) weakSelf = self;
 
 /***********导入头文件*************/
 #import "SPConst.h"

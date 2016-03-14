@@ -35,11 +35,17 @@
 		B29795C11C92E88200A80CC9 /* SPFriendTrendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C01C92E88200A80CC9 /* SPFriendTrendViewController.m */; };
 		B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C31C92E8B700A80CC9 /* SPMeViewController.m */; };
 		B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C61C92E8E500A80CC9 /* SPNewController.m */; };
-		B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29795C91C92E92000A80CC9 /* SPPublishController.m */; };
+		B2A1C1101C96B061004B2458 /* SPPublishController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1C10F1C96B061004B2458 /* SPPublishController.m */; };
+		B2A1C1131C96B0F4004B2458 /* SPTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1C1121C96B0F4004B2458 /* SPTagsViewController.m */; };
+		B2A1C1161C96BAB1004B2458 /* SPTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1C1151C96BAB1004B2458 /* SPTagItem.m */; };
+		B2A1C11E1C96BEE9004B2458 /* SPTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1C11D1C96BEE9004B2458 /* SPTagCell.m */; };
 		B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */; };
 		B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */; };
 		B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C0167C1C9553C600274E0C /* SPAdItem.m */; };
 		B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC15751C92F48100F06343 /* UIImage+originalImage.m */; };
+		B2F658391C96EB6E00469CEB /* SPTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F658381C96EB6E00469CEB /* SPTagCell.xib */; };
+		B2F6583C1C96F8A900469CEB /* UIImageView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F6583B1C96F8A900469CEB /* UIImageView+SPExtension.m */; };
+		B2F6583F1C96FBF700469CEB /* UIImage+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F6583E1C96FBF700469CEB /* UIImage+SPExtension.m */; };
 		B2FC0F1B1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F1A1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m */; };
 		B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F1D1C94649600847EC1 /* SPNavigationController.m */; };
 		B2FC0F2B1C946A2500847EC1 /* SPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FC0F2A1C946A2500847EC1 /* SPSettingViewController.m */; };
@@ -112,8 +118,14 @@
 		B29795C31C92E8B700A80CC9 /* SPMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPMeViewController.m; sourceTree = "<group>"; };
 		B29795C51C92E8E500A80CC9 /* SPNewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNewController.h; sourceTree = "<group>"; };
 		B29795C61C92E8E500A80CC9 /* SPNewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPNewController.m; sourceTree = "<group>"; };
-		B29795C81C92E92000A80CC9 /* SPPublishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPPublishController.h; path = "仿百思不得姐/Classes/New(新帖)/Controller/SPPublishController.h"; sourceTree = SOURCE_ROOT; };
-		B29795C91C92E92000A80CC9 /* SPPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPPublishController.m; path = "仿百思不得姐/Classes/New(新帖)/Controller/SPPublishController.m"; sourceTree = SOURCE_ROOT; };
+		B2A1C10E1C96B061004B2458 /* SPPublishController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPPublishController.h; path = "仿百思不得姐/Classes/Publisth(发布)/Controller/SPPublishController.h"; sourceTree = SOURCE_ROOT; };
+		B2A1C10F1C96B061004B2458 /* SPPublishController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPPublishController.m; path = "仿百思不得姐/Classes/Publisth(发布)/Controller/SPPublishController.m"; sourceTree = SOURCE_ROOT; };
+		B2A1C1111C96B0F4004B2458 /* SPTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTagsViewController.h; sourceTree = "<group>"; };
+		B2A1C1121C96B0F4004B2458 /* SPTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTagsViewController.m; sourceTree = "<group>"; };
+		B2A1C1141C96BAB1004B2458 /* SPTagItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTagItem.h; sourceTree = "<group>"; };
+		B2A1C1151C96BAB1004B2458 /* SPTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTagItem.m; sourceTree = "<group>"; };
+		B2A1C11C1C96BEE9004B2458 /* SPTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTagCell.h; sourceTree = "<group>"; };
+		B2A1C11D1C96BEE9004B2458 /* SPTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTagCell.m; sourceTree = "<group>"; };
 		B2A9BA641C931403002FAA1F /* SPCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCustomTabBar.h; sourceTree = "<group>"; };
 		B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCustomTabBar.m; sourceTree = "<group>"; };
 		B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SPExtension.h"; sourceTree = "<group>"; };
@@ -123,6 +135,11 @@
 		B2C0167C1C9553C600274E0C /* SPAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAdItem.m; sourceTree = "<group>"; };
 		B2DC15741C92F48100F06343 /* UIImage+originalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+originalImage.h"; sourceTree = "<group>"; };
 		B2DC15751C92F48100F06343 /* UIImage+originalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+originalImage.m"; sourceTree = "<group>"; };
+		B2F658381C96EB6E00469CEB /* SPTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTagCell.xib; sourceTree = "<group>"; };
+		B2F6583A1C96F8A900469CEB /* UIImageView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SPExtension.h"; sourceTree = "<group>"; };
+		B2F6583B1C96F8A900469CEB /* UIImageView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SPExtension.m"; sourceTree = "<group>"; };
+		B2F6583D1C96FBF700469CEB /* UIImage+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SPExtension.h"; sourceTree = "<group>"; };
+		B2F6583E1C96FBF700469CEB /* UIImage+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SPExtension.m"; sourceTree = "<group>"; };
 		B2FC0F191C9453EF00847EC1 /* UIBarButtonItem+SPItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SPItem.h"; sourceTree = "<group>"; };
 		B2FC0F1A1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SPItem.m"; sourceTree = "<group>"; };
 		B2FC0F1C1C94649600847EC1 /* SPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPNavigationController.h; sourceTree = "<group>"; };
@@ -435,6 +452,8 @@
 			children = (
 				B29795C51C92E8E500A80CC9 /* SPNewController.h */,
 				B29795C61C92E8E500A80CC9 /* SPNewController.m */,
+				B2A1C1111C96B0F4004B2458 /* SPTagsViewController.h */,
+				B2A1C1121C96B0F4004B2458 /* SPTagsViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -442,6 +461,8 @@
 		B29795A51C92E2E400A80CC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2A1C1141C96BAB1004B2458 /* SPTagItem.h */,
+				B2A1C1151C96BAB1004B2458 /* SPTagItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -449,6 +470,9 @@
 		B29795A61C92E2E400A80CC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2A1C11C1C96BEE9004B2458 /* SPTagCell.h */,
+				B2A1C11D1C96BEE9004B2458 /* SPTagCell.m */,
+				B2F658381C96EB6E00469CEB /* SPTagCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -481,8 +505,8 @@
 		B29795AC1C92E2E400A80CC9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B29795C81C92E92000A80CC9 /* SPPublishController.h */,
-				B29795C91C92E92000A80CC9 /* SPPublishController.m */,
+				B2A1C10E1C96B061004B2458 /* SPPublishController.h */,
+				B2A1C10F1C96B061004B2458 /* SPPublishController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -547,6 +571,10 @@
 				B2FC0F1A1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m */,
 				B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */,
 				B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */,
+				B2F6583A1C96F8A900469CEB /* UIImageView+SPExtension.h */,
+				B2F6583B1C96F8A900469CEB /* UIImageView+SPExtension.m */,
+				B2F6583D1C96FBF700469CEB /* UIImage+SPExtension.h */,
+				B2F6583E1C96FBF700469CEB /* UIImage+SPExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -693,6 +721,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26D22651C9514800028B497 /* LaunchImage.png in Resources */,
+				B2F658391C96EB6E00469CEB /* SPTagCell.xib in Resources */,
 				B26D22661C9514800028B497 /* LaunchImage@2x.png in Resources */,
 				B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */,
 				B26D22631C9514800028B497 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -773,6 +802,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A1C1131C96B0F4004B2458 /* SPTagsViewController.m in Sources */,
+				B2A1C11E1C96BEE9004B2458 /* SPTagCell.m in Sources */,
 				B2FC0F1B1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m in Sources */,
 				B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */,
 				B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */,
@@ -782,17 +813,20 @@
 				B203F7531C95A3F70077C828 /* SPAllViewController.m in Sources */,
 				B203F7561C95A40F0077C828 /* SPVideoViewController.m in Sources */,
 				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
+				B2A1C1161C96BAB1004B2458 /* SPTagItem.m in Sources */,
 				B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */,
 				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
 				B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
+				B2A1C1101C96B061004B2458 /* SPPublishController.m in Sources */,
 				B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */,
 				B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */,
 				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
 				B203F7651C95AC930077C828 /* SPConst.m in Sources */,
+				B2F6583F1C96FBF700469CEB /* UIImage+SPExtension.m in Sources */,
 				B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */,
-				B29795CA1C92E92000A80CC9 /* SPPublishController.m in Sources */,
+				B2F6583C1C96F8A900469CEB /* UIImageView+SPExtension.m in Sources */,
 				B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */,
 				B29795BE1C92E7BF00A80CC9 /* SPEssenceViewController.m in Sources */,
 				B2FC0F2B1C946A2500847EC1 /* SPSettingViewController.m in Sources */,
