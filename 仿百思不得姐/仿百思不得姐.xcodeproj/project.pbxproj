@@ -18,6 +18,10 @@
 		B24E7CDC1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E7CDB1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib */; };
 		B24E7CE01C98355A00B8F8E5 /* SPloginRegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E7CDE1C98355A00B8F8E5 /* SPloginRegistController.m */; };
 		B24E7CE11C98355A00B8F8E5 /* SPloginRegistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E7CDF1C98355A00B8F8E5 /* SPloginRegistController.xib */; };
+		B24E7CE41C98503B00B8F8E5 /* SPLoginRegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E7CE31C98503B00B8F8E5 /* SPLoginRegistView.m */; };
+		B24E7CE81C98508900B8F8E5 /* SPLoginRegistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E7CE71C98508900B8F8E5 /* SPLoginRegistView.xib */; };
+		B24E7CEB1C986AAD00B8F8E5 /* SPFastLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E7CEA1C986AAD00B8F8E5 /* SPFastLoginView.m */; };
+		B24E7CED1C986AD300B8F8E5 /* SPFastLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E7CEC1C986AD300B8F8E5 /* SPFastLoginView.xib */; };
 		B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B26D22421C950A9E0028B497 /* SPADViewController.m */; };
 		B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B26D22431C950A9E0028B497 /* SPADViewController.xib */; };
 		B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B26D22591C9514800028B497 /* LaunchImage-568h@2x.png */; };
@@ -92,6 +96,12 @@
 		B24E7CDD1C98355A00B8F8E5 /* SPloginRegistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPloginRegistController.h; sourceTree = "<group>"; };
 		B24E7CDE1C98355A00B8F8E5 /* SPloginRegistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPloginRegistController.m; sourceTree = "<group>"; };
 		B24E7CDF1C98355A00B8F8E5 /* SPloginRegistController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPloginRegistController.xib; sourceTree = "<group>"; };
+		B24E7CE21C98503B00B8F8E5 /* SPLoginRegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPLoginRegistView.h; sourceTree = "<group>"; };
+		B24E7CE31C98503B00B8F8E5 /* SPLoginRegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPLoginRegistView.m; sourceTree = "<group>"; };
+		B24E7CE71C98508900B8F8E5 /* SPLoginRegistView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPLoginRegistView.xib; sourceTree = "<group>"; };
+		B24E7CE91C986AAD00B8F8E5 /* SPFastLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFastLoginView.h; sourceTree = "<group>"; };
+		B24E7CEA1C986AAD00B8F8E5 /* SPFastLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFastLoginView.m; sourceTree = "<group>"; };
+		B24E7CEC1C986AD300B8F8E5 /* SPFastLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPFastLoginView.xib; sourceTree = "<group>"; };
 		B26D22411C950A9E0028B497 /* SPADViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPADViewController.h; sourceTree = "<group>"; };
 		B26D22421C950A9E0028B497 /* SPADViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPADViewController.m; sourceTree = "<group>"; };
 		B26D22431C950A9E0028B497 /* SPADViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPADViewController.xib; sourceTree = "<group>"; };
@@ -411,6 +421,12 @@
 		B297959E1C92E2E400A80CC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B24E7CE21C98503B00B8F8E5 /* SPLoginRegistView.h */,
+				B24E7CE31C98503B00B8F8E5 /* SPLoginRegistView.m */,
+				B24E7CE71C98508900B8F8E5 /* SPLoginRegistView.xib */,
+				B24E7CE91C986AAD00B8F8E5 /* SPFastLoginView.h */,
+				B24E7CEA1C986AAD00B8F8E5 /* SPFastLoginView.m */,
+				B24E7CEC1C986AD300B8F8E5 /* SPFastLoginView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -732,12 +748,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B26D22651C9514800028B497 /* LaunchImage.png in Resources */,
+				B24E7CED1C986AD300B8F8E5 /* SPFastLoginView.xib in Resources */,
 				B24E7CDC1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib in Resources */,
 				B2F658391C96EB6E00469CEB /* SPTagCell.xib in Resources */,
 				B26D22661C9514800028B497 /* LaunchImage@2x.png in Resources */,
 				B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */,
 				B26D22631C9514800028B497 /* LaunchImage-800-667h@2x.png in Resources */,
 				B24E7CE11C98355A00B8F8E5 /* SPloginRegistController.xib in Resources */,
+				B24E7CE81C98508900B8F8E5 /* SPLoginRegistView.xib in Resources */,
 				B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */,
 				B26D22621C9514800028B497 /* LaunchImage-700@2x.png in Resources */,
 				B26D22611C9514800028B497 /* LaunchImage-700-568h@2x.png in Resources */,
@@ -829,8 +847,10 @@
 				B2A1C1161C96BAB1004B2458 /* SPTagItem.m in Sources */,
 				B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */,
 				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
+				B24E7CE41C98503B00B8F8E5 /* SPLoginRegistView.m in Sources */,
 				B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
+				B24E7CEB1C986AAD00B8F8E5 /* SPFastLoginView.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
 				B2A1C1101C96B061004B2458 /* SPPublishController.m in Sources */,
 				B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */,
