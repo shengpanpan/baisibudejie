@@ -16,7 +16,8 @@
 - (instancetype)circleImage{
 
     // 开启图形上下文
-    UIGraphicsBeginImageContext(self.size);
+    //第二个参数表示不透明，第三个参数表示屏幕伸缩比1；1，1：2，1：3
+    UIGraphicsBeginImageContextWithOptions(self.size, NO, 0);
     
     // 获得上下文
     CGContextRef ctx = UIGraphicsGetCurrentContext();

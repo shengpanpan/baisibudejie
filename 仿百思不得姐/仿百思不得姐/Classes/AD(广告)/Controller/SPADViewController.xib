@@ -24,12 +24,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="blB-L9-mY8">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMa-nN-VBp">
-                            <rect key="frame" x="518" y="15" width="67" height="30"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMa-nN-VBp">
+                            <rect key="frame" x="490" y="15" width="95" height="34"/>
                             <color key="backgroundColor" red="0.23760016025641029" green="0.23760016025641029" blue="0.23760016025641029" alpha="0.6079741379310345" colorSpace="calibratedRGB"/>
-                            <state key="normal" title="跳转(5)秒">
-                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </state>
+                            <state key="normal" title="倒计时(5)秒"/>
                             <connections>
                                 <action selector="goToMainVC:" destination="-1" eventType="touchUpInside" id="bEo-Su-Cj7"/>
                             </connections>

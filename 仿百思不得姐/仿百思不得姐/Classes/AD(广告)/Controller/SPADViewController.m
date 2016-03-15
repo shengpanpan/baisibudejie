@@ -20,7 +20,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *launchImageView;
 @property (weak, nonatomic) IBOutlet UIButton *timerButton;
 @property (strong, nonatomic) UIImageView *ADImageView;
-@property (strong,nonatomic) NSTimer *timer;
+@property (weak,nonatomic) NSTimer *timer;//系统管理计时器，不用strong
 @property (strong, nonatomic) SPAdItem *adItem;
 
 @end
@@ -32,6 +32,14 @@
 
     if (!_ADImageView) {
         _ADImageView = [[UIImageView alloc] init];
+        
+        //添加手势识别
+        _ADImageView.userInteractionEnabled = YES;
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+        
+        [_ADImageView addGestureRecognizer:tap];
+        
     }
     return _ADImageView;
 }
@@ -49,6 +57,18 @@
     [self loadData];
 }
 
+#pragma tap方法
+- (void)tap{
+
+    NSURL *url = [NSURL URLWithString:_adItem.ori_curl];
+    
+    UIApplication *app = [UIApplication sharedApplication];
+    
+    if ([app canOpenURL:url]) {
+        [app openURL:url];
+    }
+    
+}
 #pragma 启动视图
 - (void)setLaunchImage{
 
@@ -94,12 +114,16 @@
     [sessionManager GET:@"http://mobads.baidu.com/cpro/ui/mads.php" parameters:attr progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+//        [responseObject writeToFile:@"/Users/shengp/Desktop/未命名文件夹/a.plist" atomically:YES];
      
         //1.获取ad的字典
         NSDictionary *adDic = [responseObject[@"ad"] lastObject];
+        
         //2.将字典转换为模型
         self.adItem = [SPAdItem mj_objectWithKeyValues:adDic];
-        //3.设置ad
+        
+         //3.设置ad
         if (_adItem.w > 0) {
             
 //            adItem.h = SPScreenW/(adItem.w)*adItem.h;
@@ -126,6 +150,11 @@
 #pragma 跳转到tabBar控制器
 - (IBAction)goToMainVC:(UIButton *)button {
     
+    //消灭计时器
+    [self.timer invalidate];
+     self.timer = nil;
+    
+    //跳转
     [self jumpToTabBar];
 }
 
@@ -174,12 +203,6 @@
     [UIApplication sharedApplication].keyWindow.rootViewController = tabBarVc;
     
     
-}
-
-#pragma 跳转到广告界面
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.adItem.ori_curl]];
 }
 
 @end

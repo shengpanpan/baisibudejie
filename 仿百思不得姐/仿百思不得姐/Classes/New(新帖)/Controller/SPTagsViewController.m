@@ -58,11 +58,12 @@ static NSString * const ID = @"tag";
 #pragma 初始化table
 - (void)setUpTableView{
 
-    self.tableView.backgroundColor = SPRandomColor;
     
-    self.tableView.rowHeight = 70;
+    self.tableView.rowHeight = 80;
 
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
     
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SPTagCell class]) bundle:nil] forCellReuseIdentifier:ID];
 }
@@ -133,6 +134,7 @@ static NSString * const ID = @"tag";
 
    //设置cell
     cell.tagItem = self.tagsArray[indexPath.row];
+
     
     return cell;
 }
