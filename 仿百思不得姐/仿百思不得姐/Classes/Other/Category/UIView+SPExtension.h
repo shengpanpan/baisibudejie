@@ -11,6 +11,7 @@
 @interface UIView (SPExtension)
 @property (nonatomic, assign) CGFloat sp_width;
 @property (nonatomic, assign) CGFloat sp_height;
+
 @property (nonatomic, assign) CGFloat sp_x;
 @property (nonatomic, assign) CGFloat sp_y;
 @property (nonatomic, assign) CGFloat sp_centerX;

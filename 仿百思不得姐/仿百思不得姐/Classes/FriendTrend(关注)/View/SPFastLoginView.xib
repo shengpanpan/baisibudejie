@@ -11,19 +11,19 @@
             <rect key="frame" x="0.0" y="0.0" width="400" height="117"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtr-J2-UmV">
-                    <rect key="frame" x="0.0" y="-96" width="151" height="164"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtr-J2-UmV">
+                    <rect key="frame" x="0.0" y="0.0" width="133" height="117"/>
                     <state key="normal" image="login_QQ_icon"/>
                     <state key="highlighted" image="login_QQ_icon_click"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-9Z-A3R">
-                    <rect key="frame" x="151" y="-96" width="152" height="164"/>
-                    <state key="normal" image="login_sina_icon"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJM-WX-IVy">
+                    <rect key="frame" x="267" y="0.0" width="133" height="117"/>
+                    <state key="normal" image="login_tecent_icon"/>
                     <state key="highlighted" image="login_tecent_icon_click"/>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJM-WX-IVy">
-                    <rect key="frame" x="303" y="-96" width="151" height="164"/>
-                    <state key="normal" image="login_tecent_icon"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-9Z-A3R">
+                    <rect key="frame" x="133" y="0.0" width="134" height="117"/>
+                    <state key="normal" image="login_sina_icon"/>
                     <state key="highlighted" image="login_tecent_icon_click"/>
                 </button>
             </subviews>
@@ -43,7 +43,7 @@
                 <constraint firstAttribute="trailing" secondItem="IJM-WX-IVy" secondAttribute="trailing" id="wHR-0d-oV2"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="410" y="317.5"/>
+            <point key="canvasLocation" x="743" y="608.5"/>
         </view>
     </objects>
     <resources>

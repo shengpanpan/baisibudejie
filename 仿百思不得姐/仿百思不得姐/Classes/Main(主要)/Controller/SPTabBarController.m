@@ -16,6 +16,7 @@
 #import "SPCustomTabBar.h"
 #import "SPNavigationController.h"
 
+
 @interface SPTabBarController ()
 
 @end
@@ -63,7 +64,8 @@
     [self setUpChildControllerWithController:friendVC withTitle:@"关注" withImageName:@"tabBar_friendTrends_icon" withSelectedImageName:@"tabBar_friendTrends_click_icon"];
     
     //我
-    SPMeViewController *meVC = [[SPMeViewController alloc] init];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([SPMeViewController class]) bundle:nil];
+    SPMeViewController *meVC = [storyBoard instantiateInitialViewController];
     [self setUpChildControllerWithController:meVC withTitle:@"我" withImageName:@"tabBar_me_icon" withSelectedImageName:@"tabBar_me_click_icon"];
     
     

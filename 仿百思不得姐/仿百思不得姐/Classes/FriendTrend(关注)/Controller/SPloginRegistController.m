@@ -9,6 +9,7 @@
 #import "SPloginRegistController.h"
 #import "SPLoginRegistView.h"
 #import "SPFastLoginView.h"
+#import "NSObject+SPRuntimeTest.h"
 
 @interface SPloginRegistController ()
 @property (weak, nonatomic) IBOutlet UIView *contentView;
@@ -29,6 +30,7 @@
     
     //设置快速登录
     [self setUpFastLogin];
+    
 }
 
 - (IBAction)loginRegistClick:(UIButton *)button {

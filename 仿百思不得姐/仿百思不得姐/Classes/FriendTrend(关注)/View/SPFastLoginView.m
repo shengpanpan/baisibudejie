@@ -14,4 +14,6 @@
 
     return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] lastObject];
 }
+
+//想要修改该视图子视图的属性值，可以通过继承
 @end

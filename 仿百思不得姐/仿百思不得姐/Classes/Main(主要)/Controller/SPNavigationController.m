@@ -69,6 +69,8 @@
     
     //控制器跳转之前设置返回按钮
     if (self.childViewControllers.count > 0) {
+        
+        viewController.hidesBottomBarWhenPushed = YES;
         //不是根控制器的时候设置返回按钮
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem barButtonItemWithImage:[UIImage originalImageWithName:@"navigationButtonReturn"] withHighImage:[UIImage originalImageWithName:@"navigationButtonReturnClick"] withTitle:@"返回" withTarget:self withAction:@selector(BarButtonBack)];
     }

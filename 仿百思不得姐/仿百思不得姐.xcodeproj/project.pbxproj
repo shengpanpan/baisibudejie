@@ -46,10 +46,19 @@
 		B2A1C1131C96B0F4004B2458 /* SPTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1C1121C96B0F4004B2458 /* SPTagsViewController.m */; };
 		B2A1C1161C96BAB1004B2458 /* SPTagItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1C1151C96BAB1004B2458 /* SPTagItem.m */; };
 		B2A1C11E1C96BEE9004B2458 /* SPTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A1C11D1C96BEE9004B2458 /* SPTagCell.m */; };
+		B2A2A68A1C996C2F00ED4480 /* SPTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2A6891C996C2F00ED4480 /* SPTextField.m */; };
+		B2A2A6901C99865F00ED4480 /* NSObject+SPRuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2A68F1C99865F00ED4480 /* NSObject+SPRuntimeTest.m */; };
 		B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */; };
 		B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */; };
+		B2BF34E61C9A5EC400B6EB64 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF34E51C9A5EC400B6EB64 /* WebKit.framework */; };
+		B2BF34EF1C9A718300B6EB64 /* SPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF34ED1C9A718300B6EB64 /* SPCollectionViewCell.m */; };
+		B2BF34F21C9A71BB00B6EB64 /* SPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BF34F11C9A71BB00B6EB64 /* SPCollectionViewCell.xib */; };
 		B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C0167C1C9553C600274E0C /* SPAdItem.m */; };
+		B2DA6E621C9A90AD000BA0F6 /* SPFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DA6E611C9A90AD000BA0F6 /* SPFileTools.m */; };
 		B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC15751C92F48100F06343 /* UIImage+originalImage.m */; };
+		B2F03E4D1C998C6900116B85 /* UITextField+SPPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F03E4C1C998C6900116B85 /* UITextField+SPPlaceHolder.m */; };
+		B2F03E4F1C999E8300116B85 /* SPMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F03E4E1C999E8300116B85 /* SPMeViewController.storyboard */; };
+		B2F03E5A1C99B27500116B85 /* SPSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F03E591C99B27500116B85 /* SPSquareItem.m */; };
 		B2F658391C96EB6E00469CEB /* SPTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2F658381C96EB6E00469CEB /* SPTagCell.xib */; };
 		B2F6583C1C96F8A900469CEB /* UIImageView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F6583B1C96F8A900469CEB /* UIImageView+SPExtension.m */; };
 		B2F6583F1C96FBF700469CEB /* UIImage+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F6583E1C96FBF700469CEB /* UIImage+SPExtension.m */; };
@@ -143,15 +152,30 @@
 		B2A1C1151C96BAB1004B2458 /* SPTagItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTagItem.m; sourceTree = "<group>"; };
 		B2A1C11C1C96BEE9004B2458 /* SPTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTagCell.h; sourceTree = "<group>"; };
 		B2A1C11D1C96BEE9004B2458 /* SPTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTagCell.m; sourceTree = "<group>"; };
+		B2A2A6881C996C2F00ED4480 /* SPTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTextField.h; sourceTree = "<group>"; };
+		B2A2A6891C996C2F00ED4480 /* SPTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTextField.m; sourceTree = "<group>"; };
+		B2A2A68E1C99865F00ED4480 /* NSObject+SPRuntimeTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SPRuntimeTest.h"; sourceTree = "<group>"; };
+		B2A2A68F1C99865F00ED4480 /* NSObject+SPRuntimeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SPRuntimeTest.m"; sourceTree = "<group>"; };
 		B2A9BA641C931403002FAA1F /* SPCustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCustomTabBar.h; sourceTree = "<group>"; };
 		B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCustomTabBar.m; sourceTree = "<group>"; };
 		B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SPExtension.h"; sourceTree = "<group>"; };
 		B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SPExtension.m"; sourceTree = "<group>"; };
 		B2A9BA721C931867002FAA1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2BF34E51C9A5EC400B6EB64 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		B2BF34EC1C9A718300B6EB64 /* SPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCollectionViewCell.h; sourceTree = "<group>"; };
+		B2BF34ED1C9A718300B6EB64 /* SPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCollectionViewCell.m; sourceTree = "<group>"; };
+		B2BF34F11C9A71BB00B6EB64 /* SPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPCollectionViewCell.xib; sourceTree = "<group>"; };
 		B2C0167B1C9553C600274E0C /* SPAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAdItem.h; sourceTree = "<group>"; };
 		B2C0167C1C9553C600274E0C /* SPAdItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAdItem.m; sourceTree = "<group>"; };
+		B2DA6E601C9A90AD000BA0F6 /* SPFileTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPFileTools.h; sourceTree = "<group>"; };
+		B2DA6E611C9A90AD000BA0F6 /* SPFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFileTools.m; sourceTree = "<group>"; };
 		B2DC15741C92F48100F06343 /* UIImage+originalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+originalImage.h"; sourceTree = "<group>"; };
 		B2DC15751C92F48100F06343 /* UIImage+originalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+originalImage.m"; sourceTree = "<group>"; };
+		B2F03E4B1C998C6900116B85 /* UITextField+SPPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SPPlaceHolder.h"; sourceTree = "<group>"; };
+		B2F03E4C1C998C6900116B85 /* UITextField+SPPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SPPlaceHolder.m"; sourceTree = "<group>"; };
+		B2F03E4E1C999E8300116B85 /* SPMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SPMeViewController.storyboard; sourceTree = "<group>"; };
+		B2F03E581C99B27500116B85 /* SPSquareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPSquareItem.h; sourceTree = "<group>"; };
+		B2F03E591C99B27500116B85 /* SPSquareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPSquareItem.m; sourceTree = "<group>"; };
 		B2F658381C96EB6E00469CEB /* SPTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTagCell.xib; sourceTree = "<group>"; };
 		B2F6583A1C96F8A900469CEB /* UIImageView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SPExtension.h"; sourceTree = "<group>"; };
 		B2F6583B1C96F8A900469CEB /* UIImageView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SPExtension.m"; sourceTree = "<group>"; };
@@ -171,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2BF34E61C9A5EC400B6EB64 /* WebKit.framework in Frameworks */,
 				22423EA42EF736C39915F18D /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,6 +220,7 @@
 		73F9F19FCDDC98C6B0987DD7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B2BF34E51C9A5EC400B6EB64 /* WebKit.framework */,
 				1E842F311E894EC9FA36E1DA /* libPods.a */,
 			);
 			name = Frameworks;
@@ -339,6 +365,7 @@
 		B29795961C92E2E400A80CC9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B2DA6E591C9A7C17000BA0F6 /* Tools */,
 				B29795B21C92E6A300A80CC9 /* Main(主要) */,
 				B29795971C92E2E400A80CC9 /* Essence(精华) */,
 				B29795A31C92E2E400A80CC9 /* New(新帖) */,
@@ -427,6 +454,8 @@
 				B24E7CE91C986AAD00B8F8E5 /* SPFastLoginView.h */,
 				B24E7CEA1C986AAD00B8F8E5 /* SPFastLoginView.m */,
 				B24E7CEC1C986AD300B8F8E5 /* SPFastLoginView.xib */,
+				B2A2A6881C996C2F00ED4480 /* SPTextField.h */,
+				B2A2A6891C996C2F00ED4480 /* SPTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -446,6 +475,7 @@
 			children = (
 				B29795C21C92E8B700A80CC9 /* SPMeViewController.h */,
 				B29795C31C92E8B700A80CC9 /* SPMeViewController.m */,
+				B2F03E4E1C999E8300116B85 /* SPMeViewController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -453,6 +483,8 @@
 		B29795A11C92E2E400A80CC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2F03E581C99B27500116B85 /* SPSquareItem.h */,
+				B2F03E591C99B27500116B85 /* SPSquareItem.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -460,6 +492,9 @@
 		B29795A21C92E2E400A80CC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2BF34EC1C9A718300B6EB64 /* SPCollectionViewCell.h */,
+				B2BF34ED1C9A718300B6EB64 /* SPCollectionViewCell.m */,
+				B2BF34F11C9A71BB00B6EB64 /* SPCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -602,8 +637,21 @@
 				B2F6583B1C96F8A900469CEB /* UIImageView+SPExtension.m */,
 				B2F6583D1C96FBF700469CEB /* UIImage+SPExtension.h */,
 				B2F6583E1C96FBF700469CEB /* UIImage+SPExtension.m */,
+				B2A2A68E1C99865F00ED4480 /* NSObject+SPRuntimeTest.h */,
+				B2A2A68F1C99865F00ED4480 /* NSObject+SPRuntimeTest.m */,
+				B2F03E4B1C998C6900116B85 /* UITextField+SPPlaceHolder.h */,
+				B2F03E4C1C998C6900116B85 /* UITextField+SPPlaceHolder.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		B2DA6E591C9A7C17000BA0F6 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				B2DA6E601C9A90AD000BA0F6 /* SPFileTools.h */,
+				B2DA6E611C9A90AD000BA0F6 /* SPFileTools.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		B2FC0F1F1C94696200847EC1 /* Setting(设置) */ = {
@@ -754,7 +802,9 @@
 				B26D22661C9514800028B497 /* LaunchImage@2x.png in Resources */,
 				B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */,
 				B26D22631C9514800028B497 /* LaunchImage-800-667h@2x.png in Resources */,
+				B2BF34F21C9A71BB00B6EB64 /* SPCollectionViewCell.xib in Resources */,
 				B24E7CE11C98355A00B8F8E5 /* SPloginRegistController.xib in Resources */,
+				B2F03E4F1C999E8300116B85 /* SPMeViewController.storyboard in Resources */,
 				B24E7CE81C98508900B8F8E5 /* SPLoginRegistView.xib in Resources */,
 				B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */,
 				B26D22621C9514800028B497 /* LaunchImage-700@2x.png in Resources */,
@@ -843,23 +893,29 @@
 				B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */,
 				B203F7531C95A3F70077C828 /* SPAllViewController.m in Sources */,
 				B203F7561C95A40F0077C828 /* SPVideoViewController.m in Sources */,
+				B2DA6E621C9A90AD000BA0F6 /* SPFileTools.m in Sources */,
 				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
 				B2A1C1161C96BAB1004B2458 /* SPTagItem.m in Sources */,
 				B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */,
 				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
+				B2F03E4D1C998C6900116B85 /* UITextField+SPPlaceHolder.m in Sources */,
 				B24E7CE41C98503B00B8F8E5 /* SPLoginRegistView.m in Sources */,
 				B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
+				B2F03E5A1C99B27500116B85 /* SPSquareItem.m in Sources */,
+				B2A2A68A1C996C2F00ED4480 /* SPTextField.m in Sources */,
 				B24E7CEB1C986AAD00B8F8E5 /* SPFastLoginView.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
 				B2A1C1101C96B061004B2458 /* SPPublishController.m in Sources */,
 				B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */,
 				B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */,
+				B2A2A6901C99865F00ED4480 /* NSObject+SPRuntimeTest.m in Sources */,
 				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
 				B203F7651C95AC930077C828 /* SPConst.m in Sources */,
 				B2F6583F1C96FBF700469CEB /* UIImage+SPExtension.m in Sources */,
 				B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */,
 				B2F6583C1C96F8A900469CEB /* UIImageView+SPExtension.m in Sources */,
+				B2BF34EF1C9A718300B6EB64 /* SPCollectionViewCell.m in Sources */,
 				B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */,
 				B24E7CE01C98355A00B8F8E5 /* SPloginRegistController.m in Sources */,
 				B29795BE1C92E7BF00A80CC9 /* SPEssenceViewController.m in Sources */,
