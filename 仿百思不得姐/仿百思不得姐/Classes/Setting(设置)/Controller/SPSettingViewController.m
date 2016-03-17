@@ -69,6 +69,7 @@ static NSString * const ID = @"cell";
     
     //显示缓存
     [self sizeStr];
+//     [tableView reloadData];
     return cell;
 }
 
