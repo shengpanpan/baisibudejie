@@ -20,6 +20,7 @@
 @property (nonatomic, strong) UIView *titleView;
 @property (nonatomic, strong) UIButton *selectedButton;
 @property (nonatomic, strong) UIScrollView *contentView;
+@property (nonatomic, strong) UIView *indicator;
 @end
 
 @implementation SPEssenceViewController
@@ -32,11 +33,12 @@
     //1.添加子控制器
     [self setUpChildVC];
     
-    //2.添加title视图
-    [self setUpTitleView];
-    
     //3.添加contentView视图
     [self setUpContentView];
+    
+    //2.添加title视图
+    [self setUpTitleView];
+  
     
     //4.设置代理监听contentView滚动
     self.contentView.delegate = self;
@@ -82,10 +84,9 @@
     CGFloat titleWidht = self.view.sp_width;
     CGFloat titleX = 0;
     CGFloat titleY = 64;
+    
     titleView.frame = CGRectMake(titleX, titleY, titleWidht, titleHeight);
-    
-    titleView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.7];
-    
+    titleView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.3];
     [self.view addSubview:titleView];
     self.titleView = titleView;
     
@@ -100,7 +101,6 @@
         button.frame = CGRectMake(buttonX, buttonY, buttonW, buttonH);
         
         [button setTitle:self.childViewControllers[i].title forState:UIControlStateNormal];
-        
         [button addTarget:self action:@selector(titleButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         
         button.tag = i;
@@ -108,7 +108,24 @@
         [self.titleView addSubview:button];
         
     }
+    
+    //创建唯一第一个按钮下方的指示器，之后会根据点击的按钮移动到对应的位置
+    self.indicator = [[UIView alloc] init];
+    SPTitleButton *titleButtonOne = self.titleView.subviews[0];
+    //获得按钮文字的宽度
+    [titleButtonOne.titleLabel sizeToFit];
+    CGFloat buttonW = titleButtonOne.titleLabel.sp_width + 10;
+    //设置frame
+    self.indicator.sp_width = buttonW ;
+    self.indicator.sp_height = 1;
+    self.indicator.sp_y = titleButtonOne.sp_height - 1;
+    self.indicator.sp_centerX =titleButtonOne.sp_centerX;
    
+    self.indicator.backgroundColor = [titleButtonOne titleColorForState:UIControlStateSelected ];
+    
+    [self.titleView addSubview:self.indicator];
+   
+    NSLog(@"%ld",self.titleView.subviews.count);
 }
 
 #pragma titleButton点击后的处理方法
@@ -141,6 +158,7 @@
     CGFloat viewH = self.contentView.bounds.size.height;
     selectedVC.view.frame = CGRectMake(viewX, viewY, viewW, viewH);
     
+    
     [self.contentView addSubview:selectedVC.view];
     
 }
@@ -154,6 +172,14 @@
     //保存呢选中状态的按钮
     self.selectedButton = button;
     
+    //指示器x变化
+    
+    [UIView animateWithDuration:0.1 animations:^{
+         self.indicator.sp_centerX = button.sp_centerX;
+    }];
+   
+    
+    
 }
 
 /*************conentView********/
@@ -163,15 +189,10 @@
     //创建滚动视图
     UIScrollView *scrollView = [[UIScrollView alloc] init];
     
-    CGFloat scrollY = CGRectGetMaxY(self.titleView.frame);
-    CGFloat scrollW = self.view.bounds.size.width;
-    CGFloat scrollH = self.view.bounds.size.height - scrollY;
-    CGFloat scrollX = 0;
-    scrollView.frame = CGRectMake(scrollX, scrollY, scrollW, scrollH);
-    
+    scrollView.frame = self.view.bounds;
     
     //设置滚动范围
-    scrollView.contentSize = CGSizeMake(scrollW *self.childViewControllers.count, scrollH);
+    scrollView.contentSize = CGSizeMake(SPScreenW *self.childViewControllers.count, SPScreenH);
     
     //设置可以交互
     scrollView.userInteractionEnabled = YES;

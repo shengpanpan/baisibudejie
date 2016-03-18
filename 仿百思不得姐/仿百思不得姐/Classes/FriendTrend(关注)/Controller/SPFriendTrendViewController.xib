@@ -21,10 +21,10 @@
 好友动态让你过吧瘾儿~
 欧耶~~~~!</string>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZe-QM-lib">
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZe-QM-lib">
                     <rect key="frame" x="66" y="414" width="243" height="48"/>
                     <state key="normal" title="立即点击注册" backgroundImage="friendsTrend_login">
                         <color key="titleColor" red="1" green="0.106936241" blue="0.106387683" alpha="1" colorSpace="calibratedRGB"/>

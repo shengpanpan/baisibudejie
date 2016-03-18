@@ -15,6 +15,7 @@
 		B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7611C95A60C0077C828 /* SPJokeViewController.m */; };
 		B203F7651C95AC930077C828 /* SPConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7641C95AC930077C828 /* SPConst.m */; };
 		B203F7681C95B3BB0077C828 /* SPTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7671C95B3BB0077C828 /* SPTitleButton.m */; };
+		B22FB03E1C9AFB8200C9F3A5 /* SPTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = B22FB03D1C9AFB8200C9F3A5 /* SPTopic.m */; };
 		B24E7CDC1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E7CDB1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib */; };
 		B24E7CE01C98355A00B8F8E5 /* SPloginRegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E7CDE1C98355A00B8F8E5 /* SPloginRegistController.m */; };
 		B24E7CE11C98355A00B8F8E5 /* SPloginRegistController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E7CDF1C98355A00B8F8E5 /* SPloginRegistController.xib */; };
@@ -101,6 +102,8 @@
 		B203F7641C95AC930077C828 /* SPConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPConst.m; path = Category/SPConst.m; sourceTree = "<group>"; };
 		B203F7661C95B3BB0077C828 /* SPTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTitleButton.h; sourceTree = "<group>"; };
 		B203F7671C95B3BB0077C828 /* SPTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTitleButton.m; sourceTree = "<group>"; };
+		B22FB03C1C9AFB8200C9F3A5 /* SPTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopic.h; sourceTree = "<group>"; };
+		B22FB03D1C9AFB8200C9F3A5 /* SPTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopic.m; sourceTree = "<group>"; };
 		B24E7CDB1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPFriendTrendViewController.xib; sourceTree = "<group>"; };
 		B24E7CDD1C98355A00B8F8E5 /* SPloginRegistController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPloginRegistController.h; sourceTree = "<group>"; };
 		B24E7CDE1C98355A00B8F8E5 /* SPloginRegistController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPloginRegistController.m; sourceTree = "<group>"; };
@@ -240,8 +243,8 @@
 			children = (
 				B203F7511C95A3F70077C828 /* SPAllViewController.h */,
 				B203F7521C95A3F70077C828 /* SPAllViewController.m */,
-				B203F7541C95A40F0077C828 /* SPVideoViewController.h */,
 				B203F7551C95A40F0077C828 /* SPVideoViewController.m */,
+				B203F7541C95A40F0077C828 /* SPVideoViewController.h */,
 				B203F7571C95A4230077C828 /* SPVoiceViewController.h */,
 				B203F7581C95A4230077C828 /* SPVoiceViewController.m */,
 				B203F75A1C95A4360077C828 /* SPPictureViewController.h */,
@@ -402,6 +405,8 @@
 		B29795991C92E2E400A80CC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B22FB03C1C9AFB8200C9F3A5 /* SPTopic.h */,
+				B22FB03D1C9AFB8200C9F3A5 /* SPTopic.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -889,6 +894,7 @@
 				B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */,
 				B29795C41C92E8B700A80CC9 /* SPMeViewController.m in Sources */,
 				B203F7681C95B3BB0077C828 /* SPTitleButton.m in Sources */,
+				B22FB03E1C9AFB8200C9F3A5 /* SPTopic.m in Sources */,
 				B29795B01C92E2E400A80CC9 /* main.m in Sources */,
 				B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */,
 				B203F7531C95A3F70077C828 /* SPAllViewController.m in Sources */,
