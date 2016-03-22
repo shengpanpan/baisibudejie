@@ -43,3 +43,9 @@ UIKIT_EXTERN NSString * const SPUserSexMale;
 
 /** 性别-女 */
 UIKIT_EXTERN NSString * const SPUserSexFemale;
+
+/**重复点击tabBarButton刷新事件*/
+UIKIT_EXTERN NSString * const SPTabBarButtonDidRpeatClickNotification;
+
+/**重复点击titleViewButton刷新事件*/
+UIKIT_EXTERN NSString * const SPTitleViewButtonDidRpeatClickNotification;

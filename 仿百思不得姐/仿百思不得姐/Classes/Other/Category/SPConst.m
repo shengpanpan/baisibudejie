@@ -38,3 +38,10 @@ NSString * const SPUserSexMale = @"m";
 
 /** 性别-女 */
 NSString * const SPUserSexFemale = @"f";
+
+/**重复点击tabBarButton刷新事件*/
+NSString * const SPTabBarButtonDidRpeatClickNotification = @"SPTabBarButtonDidRpeatClickNotification";
+
+/**重复点击titleViewButton刷新事件*/
+NSString * const SPTitleViewButtonDidRpeatClickNotification = @"SPTitleViewButtonDidRpeatClickNotification";
+

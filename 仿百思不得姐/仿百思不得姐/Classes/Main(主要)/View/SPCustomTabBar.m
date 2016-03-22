@@ -12,6 +12,7 @@
 @interface SPCustomTabBar()
 
 @property (nonatomic, weak) UIButton *publishButton;
+@property (nonatomic, strong) UIButton *previousClickedTabBarButton;
 
 @end
 
@@ -25,8 +26,7 @@
         UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [publishButton setImage:[UIImage originalImageWithName:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishButton setImage:[UIImage originalImageWithName:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
-        [publishButton addTarget:self action:@selector(publishClick) forControlEvents:UIControlEventTouchUpInside];
-        [publishButton sizeToFit];
+              [publishButton sizeToFit];
         [self addSubview:publishButton];
         
         _publishButton = publishButton;
@@ -58,7 +58,7 @@
     CGFloat btnX = 0;
     int i = 0;
     
-    for (UIView *tabBarButton in self.subviews) {
+    for (UIButton *tabBarButton in self.subviews) {
         if ([tabBarButton isKindOfClass:NSClassFromString(@"UITabBarButton")]) {
 
             if (i == 2) {
@@ -69,15 +69,28 @@
             tabBarButton.frame = CGRectMake(btnX, 0, btnW, btnH);
             
             i++;
+            
+            [tabBarButton addTarget:self action:@selector(tabBarClick:) forControlEvents:UIControlEventTouchUpInside];
         }
         
         self.publishButton.center = CGPointMake(self.bounds.size.width/2, self.bounds.size.height/2);
+        
+       
     }
 }
 
-#pragma 点击按钮的时候调用的方法
-- (void)publishClick{
+- (void)tabBarClick:(UIButton *)button{
 
-    NSLog(@"%s",__func__);
+    SPLogFunc;
+    
+    //判断是否为第一次点击如果为第一次点击则不发送刷新通知
+    if (self.previousClickedTabBarButton) {
+        //发送通知
+        [[NSNotificationCenter defaultCenter] postNotificationName:SPTabBarButtonDidRpeatClickNotification object:nil userInfo:nil];
+        
+    }
+    
+    self.previousClickedTabBarButton = button;
+   
 }
 @end

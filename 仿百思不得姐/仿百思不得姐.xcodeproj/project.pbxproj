@@ -51,12 +51,15 @@
 		B2A2A6901C99865F00ED4480 /* NSObject+SPRuntimeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A2A68F1C99865F00ED4480 /* NSObject+SPRuntimeTest.m */; };
 		B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA651C931403002FAA1F /* SPCustomTabBar.m */; };
 		B2A9BA6F1C9315DD002FAA1F /* UIView+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */; };
+		B2BD3C051C9E961E00C647F5 /* SPRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BD3C041C9E961E00C647F5 /* SPRefreshHeader.m */; };
 		B2BF34E61C9A5EC400B6EB64 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BF34E51C9A5EC400B6EB64 /* WebKit.framework */; };
 		B2BF34EF1C9A718300B6EB64 /* SPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2BF34ED1C9A718300B6EB64 /* SPCollectionViewCell.m */; };
 		B2BF34F21C9A71BB00B6EB64 /* SPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2BF34F11C9A71BB00B6EB64 /* SPCollectionViewCell.xib */; };
 		B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C0167C1C9553C600274E0C /* SPAdItem.m */; };
 		B2DA6E621C9A90AD000BA0F6 /* SPFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DA6E611C9A90AD000BA0F6 /* SPFileTools.m */; };
 		B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC15751C92F48100F06343 /* UIImage+originalImage.m */; };
+		B2E963061C9FC61D0020AD84 /* SPTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E963051C9FC61D0020AD84 /* SPTopicCell.m */; };
+		B2E9630A1C9FC6C00020AD84 /* SPTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E963091C9FC6C00020AD84 /* SPTopicCell.xib */; };
 		B2F03E4D1C998C6900116B85 /* UITextField+SPPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F03E4C1C998C6900116B85 /* UITextField+SPPlaceHolder.m */; };
 		B2F03E4F1C999E8300116B85 /* SPMeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2F03E4E1C999E8300116B85 /* SPMeViewController.storyboard */; };
 		B2F03E5A1C99B27500116B85 /* SPSquareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F03E591C99B27500116B85 /* SPSquareItem.m */; };
@@ -164,6 +167,8 @@
 		B2A9BA6D1C9315DD002FAA1F /* UIView+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SPExtension.h"; sourceTree = "<group>"; };
 		B2A9BA6E1C9315DD002FAA1F /* UIView+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SPExtension.m"; sourceTree = "<group>"; };
 		B2A9BA721C931867002FAA1F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		B2BD3C031C9E961E00C647F5 /* SPRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRefreshHeader.h; sourceTree = "<group>"; };
+		B2BD3C041C9E961E00C647F5 /* SPRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRefreshHeader.m; sourceTree = "<group>"; };
 		B2BF34E51C9A5EC400B6EB64 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		B2BF34EC1C9A718300B6EB64 /* SPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPCollectionViewCell.h; sourceTree = "<group>"; };
 		B2BF34ED1C9A718300B6EB64 /* SPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPCollectionViewCell.m; sourceTree = "<group>"; };
@@ -174,6 +179,9 @@
 		B2DA6E611C9A90AD000BA0F6 /* SPFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFileTools.m; sourceTree = "<group>"; };
 		B2DC15741C92F48100F06343 /* UIImage+originalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+originalImage.h"; sourceTree = "<group>"; };
 		B2DC15751C92F48100F06343 /* UIImage+originalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+originalImage.m"; sourceTree = "<group>"; };
+		B2E963041C9FC61D0020AD84 /* SPTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopicCell.h; sourceTree = "<group>"; };
+		B2E963051C9FC61D0020AD84 /* SPTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopicCell.m; sourceTree = "<group>"; };
+		B2E963091C9FC6C00020AD84 /* SPTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTopicCell.xib; sourceTree = "<group>"; };
 		B2F03E4B1C998C6900116B85 /* UITextField+SPPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SPPlaceHolder.h"; sourceTree = "<group>"; };
 		B2F03E4C1C998C6900116B85 /* UITextField+SPPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SPPlaceHolder.m"; sourceTree = "<group>"; };
 		B2F03E4E1C999E8300116B85 /* SPMeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SPMeViewController.storyboard; sourceTree = "<group>"; };
@@ -243,8 +251,8 @@
 			children = (
 				B203F7511C95A3F70077C828 /* SPAllViewController.h */,
 				B203F7521C95A3F70077C828 /* SPAllViewController.m */,
-				B203F7551C95A40F0077C828 /* SPVideoViewController.m */,
 				B203F7541C95A40F0077C828 /* SPVideoViewController.h */,
+				B203F7551C95A40F0077C828 /* SPVideoViewController.m */,
 				B203F7571C95A4230077C828 /* SPVoiceViewController.h */,
 				B203F7581C95A4230077C828 /* SPVoiceViewController.m */,
 				B203F75A1C95A4360077C828 /* SPPictureViewController.h */,
@@ -414,8 +422,13 @@
 		B297959A1C92E2E400A80CC9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B2E963041C9FC61D0020AD84 /* SPTopicCell.h */,
+				B2E963051C9FC61D0020AD84 /* SPTopicCell.m */,
+				B2E963091C9FC6C00020AD84 /* SPTopicCell.xib */,
 				B203F7661C95B3BB0077C828 /* SPTitleButton.h */,
 				B203F7671C95B3BB0077C828 /* SPTitleButton.m */,
+				B2BD3C031C9E961E00C647F5 /* SPRefreshHeader.h */,
+				B2BD3C041C9E961E00C647F5 /* SPRefreshHeader.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -812,6 +825,7 @@
 				B2F03E4F1C999E8300116B85 /* SPMeViewController.storyboard in Resources */,
 				B24E7CE81C98508900B8F8E5 /* SPLoginRegistView.xib in Resources */,
 				B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */,
+				B2E9630A1C9FC6C00020AD84 /* SPTopicCell.xib in Resources */,
 				B26D22621C9514800028B497 /* LaunchImage-700@2x.png in Resources */,
 				B26D22611C9514800028B497 /* LaunchImage-700-568h@2x.png in Resources */,
 				B283FA1C1C9262B900312DB6 /* Assets.xcassets in Resources */,
@@ -909,6 +923,7 @@
 				B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */,
 				B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */,
 				B2F03E5A1C99B27500116B85 /* SPSquareItem.m in Sources */,
+				B2E963061C9FC61D0020AD84 /* SPTopicCell.m in Sources */,
 				B2A2A68A1C996C2F00ED4480 /* SPTextField.m in Sources */,
 				B24E7CEB1C986AAD00B8F8E5 /* SPFastLoginView.m in Sources */,
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
@@ -919,6 +934,7 @@
 				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
 				B203F7651C95AC930077C828 /* SPConst.m in Sources */,
 				B2F6583F1C96FBF700469CEB /* UIImage+SPExtension.m in Sources */,
+				B2BD3C051C9E961E00C647F5 /* SPRefreshHeader.m in Sources */,
 				B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */,
 				B2F6583C1C96F8A900469CEB /* UIImageView+SPExtension.m in Sources */,
 				B2BF34EF1C9A718300B6EB64 /* SPCollectionViewCell.m in Sources */,

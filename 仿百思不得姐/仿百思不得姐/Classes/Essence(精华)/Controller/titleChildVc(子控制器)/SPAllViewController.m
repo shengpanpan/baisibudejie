@@ -1,155 +1,158 @@
 //
-//  SPAllViewController.m
-//  仿百思不得姐
+//  XMGAllViewController.m
+//  5期-百思不得姐
 //
-//  Created by 风 on 16/3/13.
-//  Copyright © 2016年 panda.sheng. All rights reserved.
+//  Created by xiaomage on 15/11/16.
+//  Copyright © 2015年 xiaomage. All rights reserved.
 //
 
 #import "SPAllViewController.h"
-#import  <AFNetworking/AFNetworking.h>
+#import <AFNetworking.h>
 #import "SPTopic.h"
-#import <MJExtension/MJExtension.h>
-#import <MJRefresh/MJRefresh.h>
+#import "SPTopicCell.h"
+#import <MJExtension.h>
+#import <UIImageView+WebCache.h>
+#import "SPRefreshHeader.h"
 
-@interface SPAllViewController ()<UITableViewDataSource>
-@property (nonatomic, strong) AFHTTPSessionManager *mgr;
-@property (nonatomic, strong) UIRefreshControl *control;
-@property (nonatomic, strong) NSMutableArray *listArray;
-@property (nonatomic, assign) NSString *maxTime;
+@interface SPAllViewController ()
+/** 所有的帖子数据 */
+@property (nonatomic, strong) NSMutableArray *topics;
+/** 下拉刷新的提示文字 */
+@property (nonatomic, weak) UILabel *label;
+/** maxtime : 用来加载下一页数据 */
+@property (nonatomic, copy) NSString *maxtime;
+/** 任务管理者 */
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
 @end
-
+static NSString *const ID = @"cell";
 @implementation SPAllViewController
 
-#pragma 懒加载
-- (AFHTTPSessionManager *)mgr{
-
-    if (!_mgr) {
-        _mgr = [AFHTTPSessionManager manager];
+- (AFHTTPSessionManager *)manager
+{
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
     }
-    return _mgr;
+    return _manager;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
-    self.view.backgroundColor = SPRandomColor;
     
-    //设置内边距
-    self.tableView.contentInset = UIEdgeInsetsMake(SPNavBarMaxY + SPTitlesViewH, 0, SPTabBarH, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
+    self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
     
-    //1.设置刷新控件
-    [self setUpRefreshControl];
+    [self setupRefresh];
     
-    //3.创建数据模型
-    //4.搭建页面
-    
+    //注册cell
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SPTopicCell class]) bundle:nil] forCellReuseIdentifier:ID];
+    self.tableView.rowHeight = 280;
+    self.tableView.backgroundColor = [UIColor lightGrayColor];
 }
 
-#pragma 初始化刷新控件
-- (void)setUpRefreshControl{
-
-    self.tableView.mj_header = [MJRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
-    
-    //开始刷新
+- (void)setupRefresh
+{
+    self.tableView.mj_header = [SPRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     [self.tableView.mj_header beginRefreshing];
-    self.tableView.mj_footer = [MJRefreshFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
-   
+    
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
 
+#pragma mark - 数据加载
 
-#pragma 加载新数据
-- (void)loadNewTopics{
+- (void)loadNewTopics
+{
+    // 取消所有请求
+    //    for (NSURLSessionTask *task in self.manager.tasks) {
+    //        [task cancel];
+    //    }
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
     
-    //设置参数
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
-    parameters[@"c"] = @"data";
+    // 关闭NSURLSession + 取消所有请求
+    // [self.manager invalidateSessionCancelingTasks:YES];
     
-    //发送请求
-    [self.mgr GET:SPRequestURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        //数据转模型
-        self.listArray = [SPTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        
-        //刷新表格
-        [self.tableView reloadData];
-        //网络加载完成，结束加载显示
-        [self.tableView.header endRefreshing];
-        
-         //获取maxTime
-        self.maxTime = responseObject[@"info"][@"maxtime"];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        if (error.code == NSURLErrorCancelled) {
-            NSLog(@"网络请求取消！");
-        }
-        NSLog(@"加载网络数据失败");
-       [self.tableView.header endRefreshing];
-        
-    }];
-
+    // 参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
     
-}
-
-
-#pragma 加载更多的数据
-- (void)loadMoreData{
-
-    //设置参数
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
-    parameters[@"c"] = @"data";
-    parameters[@"maxtime"] = self.maxTime;
-    
-    //发送请求
-    [self.mgr GET:SPRequestURL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    // 发送请求
+    [self.manager GET:SPRequestURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        // 存储maxtime(方便用来加载下一页数据)
+        self.maxtime = responseObject[@"info"][@"maxtime"];
         
-        //数据转模型
-        NSArray *newlistArray = [SPTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
-        [self.listArray addObjectsFromArray:newlistArray];
+        // 字典数组 -> 模型数组
+        self.topics = [SPTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         
-        //刷新表格
+        // 刷新表格
         [self.tableView reloadData];
         
-        //网络加载完成，结束加载显示
-        [self.tableView.header endRefreshing];
-        
-        //获取最新的maxTime
-        self.maxTime = responseObject[@"info"][@"maxtime"];
-        
+        // 让[刷新控件]结束刷新
+        [self.tableView.mj_header endRefreshing];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (error.code == NSURLErrorCancelled) {
-            NSLog(@"网络请求取消！");
+            // 取消了任务
+        } else {
+            // 是其他错误
         }
-        NSLog(@"加载网络数据失败");
-        [self.tableView.header endRefreshing];
+        SPLog(@"请求失败 - %@", error);
         
+        // 让[刷新控件]结束刷新
+        [self.tableView.mj_header endRefreshing];
     }];
-    
-
-    
-}
-#pragma UITableViewDataSource
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-
-    return self.listArray.count;
 }
 
+// 一个请求任务被取消了(cancel), 会自动调用AFN请求的failure这个block
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+- (void)loadMoreTopics
+{
+    // 取消所有的请求
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
+    // 参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"list";
+    params[@"c"] = @"data";
+    params[@"maxtime"] = self.maxtime;
+    
+    // 发送请求
+    [self.manager GET:SPRequestURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        // 存储这页对应的maxtime
+        self.maxtime = responseObject[@"info"][@"maxtime"];
+        
+        // 字典数组 -> 模型数组
+        NSArray *moreTopics = [SPTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
+        [self.topics addObjectsFromArray:moreTopics];
+        
+        // 刷新表格
+        [self.tableView reloadData];
+        
+        // 让[刷新控件]结束刷新
+        [self.tableView.mj_footer endRefreshing];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        SPLog(@"请求失败 - %@", error);
+        
+        // 让[刷新控件]结束刷新
+        [self.tableView.mj_footer endRefreshing];
+    }];
+}
 
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.topics.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    // 1.确定重用标示:
     static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-        cell.backgroundColor = SPRandomColor;
-    }
+    // 2.从缓存池中取
+    SPTopicCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@%ld",tableView.class,indexPath.row];
+    // 4.显示数据
+    cell.topic = self.topics[indexPath.row];
     return cell;
 }
+
+#pragma mark - 代理方法
+
 @end

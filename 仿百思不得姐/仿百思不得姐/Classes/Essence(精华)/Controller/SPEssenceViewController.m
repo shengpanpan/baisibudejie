@@ -140,6 +140,9 @@
     
     //设置内容视图的偏移量
     self.contentView.contentOffset = CGPointMake(button.tag*(self.contentView.bounds.size.width), 0);
+    
+     //点击按钮发送通知
+    [[NSNotificationCenter defaultCenter] postNotificationName:SPTitleViewButtonDidRpeatClickNotification object:nil userInfo:nil];
  
 }
 
@@ -165,6 +168,7 @@
 
 #pragma 设置选中状态
 - (void)selectedButton:(UIButton *)button{
+    
     //取消上次的选中状态
     self.selectedButton.selected = NO;
     //设置选中状态
@@ -179,7 +183,19 @@
     }];
    
     
-    
+    //按钮点击的时候，遍历所有的控制器view,然后设置当前的view为scrolltotop为yes
+    for (int i = 0; i < self.childViewControllers.count; i ++) {
+        UIViewController *vc = self.childViewControllers[i];
+        
+        //如果view没有被创建就不用处理
+        if (!vc.isViewLoaded) continue;
+        
+        UIScrollView *scrollView = (UIScrollView *)vc.view;
+        
+        if (![scrollView isKindOfClass:[UIScrollView class]])  continue;
+              
+              scrollView.scrollsToTop = (i == button.tag);
+    }
 }
 
 /*************conentView********/
@@ -214,6 +230,10 @@
     
     //选中全部按钮
     [self titleButtonClick:self.titleView.subviews[0]];
+    
+    
+    //设置系统自带的滚动到顶部,只有为一个scrollstotop该视图才会滚动到顶端。
+    scrollView.scrollsToTop = NO;
     
 }
 
