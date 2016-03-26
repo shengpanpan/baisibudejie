@@ -30,6 +30,7 @@
 #import "AppDelegate.h"
 #import "SPTabBarController.h"
 #import "SPADViewController.h"
+#import <AFNetworking.h>
 
 @interface AppDelegate ()
 
@@ -51,6 +52,8 @@
     self.window.rootViewController = tabBarVC;
     [self.window makeKeyAndVisible];
     
+    //开启网络监控
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
     return YES;
 }
 

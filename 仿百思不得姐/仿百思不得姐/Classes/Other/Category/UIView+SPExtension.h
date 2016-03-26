@@ -19,4 +19,11 @@
 
 @property (nonatomic, assign) CGFloat sp_right;
 @property (nonatomic, assign) CGFloat sp_bottom;
+
+/**
+ *  从xib加载view
+ *
+ *  @return view
+ */
++ (instancetype)sp_viewFromXib;
 @end

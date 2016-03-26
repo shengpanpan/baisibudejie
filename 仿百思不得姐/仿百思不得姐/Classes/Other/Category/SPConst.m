@@ -4,7 +4,7 @@
 #import <UIKit/UIKit.h>
 
 /** 请求路径 */
-NSString * const SPRequestURL = @"http://api.budejie.com/api/api_open.php";
+UIKIT_EXTERN NSString * const SPRequestURL = @"http://api.budejie.com/api/api_open.php";
 
 /** 统一的间距 */
 CGFloat const SPCommonMargin = 10;

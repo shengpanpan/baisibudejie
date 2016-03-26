@@ -15,6 +15,7 @@
 #import "SPRefreshHeader.h"
 
 @interface SPAllViewController ()
+
 /** 所有的帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
 /** 下拉刷新的提示文字 */
@@ -23,8 +24,11 @@
 @property (nonatomic, copy) NSString *maxtime;
 /** 任务管理者 */
 @property (nonatomic, strong) AFHTTPSessionManager *manager;
+
 @end
+
 static NSString *const ID = @"cell";
+
 @implementation SPAllViewController
 
 - (AFHTTPSessionManager *)manager
@@ -40,20 +44,22 @@ static NSString *const ID = @"cell";
     
     self.tableView.contentInset = UIEdgeInsetsMake(64 + 35, 0, 49, 0);
     self.tableView.scrollIndicatorInsets = self.tableView.contentInset;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self setupRefresh];
     
     //注册cell
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SPTopicCell class]) bundle:nil] forCellReuseIdentifier:ID];
-    self.tableView.rowHeight = 280;
+    //设置的是整个行高，重写cell的setFrame方法，将cell的高度降低，但是并不影响行高
+//    self.tableView.rowHeight = 300;
     self.tableView.backgroundColor = [UIColor lightGrayColor];
+
 }
 
 - (void)setupRefresh
 {
     self.tableView.mj_header = [SPRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewTopics)];
     [self.tableView.mj_header beginRefreshing];
-    
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
 
@@ -74,6 +80,7 @@ static NSString *const ID = @"cell";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
+    params[@"type"] = @"41";
     
     // 发送请求
     [self.manager GET:SPRequestURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
@@ -112,7 +119,9 @@ static NSString *const ID = @"cell";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
+    params[@"type"] = @"41";
     params[@"maxtime"] = self.maxtime;
+    
     
     // 发送请求
     [self.manager GET:SPRequestURL parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
@@ -150,9 +159,14 @@ static NSString *const ID = @"cell";
     
     // 4.显示数据
     cell.topic = self.topics[indexPath.row];
+    NSLog(@"%f",cell.topic.cellHeight);
     return cell;
 }
 
 #pragma mark - 代理方法
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    SPTopic *topic = self.topics[indexPath.row];
+    return topic.cellHeight;
+}
 @end

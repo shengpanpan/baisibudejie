@@ -15,6 +15,8 @@
 		B203F7621C95A60C0077C828 /* SPJokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7611C95A60C0077C828 /* SPJokeViewController.m */; };
 		B203F7651C95AC930077C828 /* SPConst.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7641C95AC930077C828 /* SPConst.m */; };
 		B203F7681C95B3BB0077C828 /* SPTitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B203F7671C95B3BB0077C828 /* SPTitleButton.m */; };
+		B20E90A11CA2B6030068D078 /* NSCalendar+SPCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = B20E90A01CA2B6030068D078 /* NSCalendar+SPCalendar.m */; };
+		B20E90A41CA2BD4E0068D078 /* NSDate+SPExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B20E90A31CA2BD4E0068D078 /* NSDate+SPExtension.m */; };
 		B22FB03E1C9AFB8200C9F3A5 /* SPTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = B22FB03D1C9AFB8200C9F3A5 /* SPTopic.m */; };
 		B24E7CDC1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B24E7CDB1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib */; };
 		B24E7CE01C98355A00B8F8E5 /* SPloginRegistController.m in Sources */ = {isa = PBXBuildFile; fileRef = B24E7CDE1C98355A00B8F8E5 /* SPloginRegistController.m */; };
@@ -58,6 +60,12 @@
 		B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C0167C1C9553C600274E0C /* SPAdItem.m */; };
 		B2DA6E621C9A90AD000BA0F6 /* SPFileTools.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DA6E611C9A90AD000BA0F6 /* SPFileTools.m */; };
 		B2DC15761C92F48100F06343 /* UIImage+originalImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DC15751C92F48100F06343 /* UIImage+originalImage.m */; };
+		B2DCE2671CA43075008E2DEA /* SPTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DCE2661CA43075008E2DEA /* SPTopicVideoView.m */; };
+		B2DCE2691CA4308F008E2DEA /* SPTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DCE2681CA4308F008E2DEA /* SPTopicVideoView.xib */; };
+		B2DCE26C1CA4310F008E2DEA /* SPTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DCE26B1CA4310F008E2DEA /* SPTopicVoiceView.m */; };
+		B2DCE26E1CA43129008E2DEA /* SPTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DCE26D1CA43129008E2DEA /* SPTopicVoiceView.xib */; };
+		B2DCE2711CA43189008E2DEA /* SPTopicPicView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DCE2701CA43189008E2DEA /* SPTopicPicView.m */; };
+		B2DCE2731CA43199008E2DEA /* SPTopicPicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DCE2721CA43199008E2DEA /* SPTopicPicView.xib */; };
 		B2E963061C9FC61D0020AD84 /* SPTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E963051C9FC61D0020AD84 /* SPTopicCell.m */; };
 		B2E9630A1C9FC6C00020AD84 /* SPTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2E963091C9FC6C00020AD84 /* SPTopicCell.xib */; };
 		B2F03E4D1C998C6900116B85 /* UITextField+SPPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F03E4C1C998C6900116B85 /* UITextField+SPPlaceHolder.m */; };
@@ -105,6 +113,10 @@
 		B203F7641C95AC930077C828 /* SPConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPConst.m; path = Category/SPConst.m; sourceTree = "<group>"; };
 		B203F7661C95B3BB0077C828 /* SPTitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTitleButton.h; sourceTree = "<group>"; };
 		B203F7671C95B3BB0077C828 /* SPTitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTitleButton.m; sourceTree = "<group>"; };
+		B20E909F1CA2B6030068D078 /* NSCalendar+SPCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+SPCalendar.h"; sourceTree = "<group>"; };
+		B20E90A01CA2B6030068D078 /* NSCalendar+SPCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+SPCalendar.m"; sourceTree = "<group>"; };
+		B20E90A21CA2BD4E0068D078 /* NSDate+SPExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SPExtension.h"; sourceTree = "<group>"; };
+		B20E90A31CA2BD4E0068D078 /* NSDate+SPExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SPExtension.m"; sourceTree = "<group>"; };
 		B22FB03C1C9AFB8200C9F3A5 /* SPTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopic.h; sourceTree = "<group>"; };
 		B22FB03D1C9AFB8200C9F3A5 /* SPTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopic.m; sourceTree = "<group>"; };
 		B24E7CDB1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPFriendTrendViewController.xib; sourceTree = "<group>"; };
@@ -179,6 +191,15 @@
 		B2DA6E611C9A90AD000BA0F6 /* SPFileTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPFileTools.m; sourceTree = "<group>"; };
 		B2DC15741C92F48100F06343 /* UIImage+originalImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+originalImage.h"; sourceTree = "<group>"; };
 		B2DC15751C92F48100F06343 /* UIImage+originalImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+originalImage.m"; sourceTree = "<group>"; };
+		B2DCE2651CA43075008E2DEA /* SPTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopicVideoView.h; sourceTree = "<group>"; };
+		B2DCE2661CA43075008E2DEA /* SPTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopicVideoView.m; sourceTree = "<group>"; };
+		B2DCE2681CA4308F008E2DEA /* SPTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTopicVideoView.xib; sourceTree = "<group>"; };
+		B2DCE26A1CA4310F008E2DEA /* SPTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopicVoiceView.h; sourceTree = "<group>"; };
+		B2DCE26B1CA4310F008E2DEA /* SPTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopicVoiceView.m; sourceTree = "<group>"; };
+		B2DCE26D1CA43129008E2DEA /* SPTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTopicVoiceView.xib; sourceTree = "<group>"; };
+		B2DCE26F1CA43188008E2DEA /* SPTopicPicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopicPicView.h; sourceTree = "<group>"; };
+		B2DCE2701CA43189008E2DEA /* SPTopicPicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopicPicView.m; sourceTree = "<group>"; };
+		B2DCE2721CA43199008E2DEA /* SPTopicPicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTopicPicView.xib; sourceTree = "<group>"; };
 		B2E963041C9FC61D0020AD84 /* SPTopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTopicCell.h; sourceTree = "<group>"; };
 		B2E963051C9FC61D0020AD84 /* SPTopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTopicCell.m; sourceTree = "<group>"; };
 		B2E963091C9FC6C00020AD84 /* SPTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTopicCell.xib; sourceTree = "<group>"; };
@@ -425,6 +446,15 @@
 				B2E963041C9FC61D0020AD84 /* SPTopicCell.h */,
 				B2E963051C9FC61D0020AD84 /* SPTopicCell.m */,
 				B2E963091C9FC6C00020AD84 /* SPTopicCell.xib */,
+				B2DCE2651CA43075008E2DEA /* SPTopicVideoView.h */,
+				B2DCE2661CA43075008E2DEA /* SPTopicVideoView.m */,
+				B2DCE2681CA4308F008E2DEA /* SPTopicVideoView.xib */,
+				B2DCE26A1CA4310F008E2DEA /* SPTopicVoiceView.h */,
+				B2DCE26B1CA4310F008E2DEA /* SPTopicVoiceView.m */,
+				B2DCE26D1CA43129008E2DEA /* SPTopicVoiceView.xib */,
+				B2DCE26F1CA43188008E2DEA /* SPTopicPicView.h */,
+				B2DCE2701CA43189008E2DEA /* SPTopicPicView.m */,
+				B2DCE2721CA43199008E2DEA /* SPTopicPicView.xib */,
 				B203F7661C95B3BB0077C828 /* SPTitleButton.h */,
 				B203F7671C95B3BB0077C828 /* SPTitleButton.m */,
 				B2BD3C031C9E961E00C647F5 /* SPRefreshHeader.h */,
@@ -645,6 +675,10 @@
 		B29795CB1C92EF7900A80CC9 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				B20E909F1CA2B6030068D078 /* NSCalendar+SPCalendar.h */,
+				B20E90A01CA2B6030068D078 /* NSCalendar+SPCalendar.m */,
+				B20E90A21CA2BD4E0068D078 /* NSDate+SPExtension.h */,
+				B20E90A31CA2BD4E0068D078 /* NSDate+SPExtension.m */,
 				B2DC15741C92F48100F06343 /* UIImage+originalImage.h */,
 				B2DC15751C92F48100F06343 /* UIImage+originalImage.m */,
 				B2FC0F191C9453EF00847EC1 /* UIBarButtonItem+SPItem.h */,
@@ -817,6 +851,7 @@
 				B24E7CED1C986AD300B8F8E5 /* SPFastLoginView.xib in Resources */,
 				B24E7CDC1C9830EC00B8F8E5 /* SPFriendTrendViewController.xib in Resources */,
 				B2F658391C96EB6E00469CEB /* SPTagCell.xib in Resources */,
+				B2DCE2731CA43199008E2DEA /* SPTopicPicView.xib in Resources */,
 				B26D22661C9514800028B497 /* LaunchImage@2x.png in Resources */,
 				B26D22451C950A9E0028B497 /* SPADViewController.xib in Resources */,
 				B26D22631C9514800028B497 /* LaunchImage-800-667h@2x.png in Resources */,
@@ -826,10 +861,12 @@
 				B24E7CE81C98508900B8F8E5 /* SPLoginRegistView.xib in Resources */,
 				B26D22601C9514800028B497 /* LaunchImage-568h@2x.png in Resources */,
 				B2E9630A1C9FC6C00020AD84 /* SPTopicCell.xib in Resources */,
+				B2DCE2691CA4308F008E2DEA /* SPTopicVideoView.xib in Resources */,
 				B26D22621C9514800028B497 /* LaunchImage-700@2x.png in Resources */,
 				B26D22611C9514800028B497 /* LaunchImage-700-568h@2x.png in Resources */,
 				B283FA1C1C9262B900312DB6 /* Assets.xcassets in Resources */,
 				B26D22641C9514800028B497 /* LaunchImage-800-Portrait-736h@3x.png in Resources */,
+				B2DCE26E1CA43129008E2DEA /* SPTopicVoiceView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,6 +940,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A1C1131C96B0F4004B2458 /* SPTagsViewController.m in Sources */,
+				B2DCE2671CA43075008E2DEA /* SPTopicVideoView.m in Sources */,
+				B20E90A11CA2B6030068D078 /* NSCalendar+SPCalendar.m in Sources */,
 				B2A1C11E1C96BEE9004B2458 /* SPTagCell.m in Sources */,
 				B2FC0F1B1C9453EF00847EC1 /* UIBarButtonItem+SPItem.m in Sources */,
 				B29795AF1C92E2E400A80CC9 /* AppDelegate.m in Sources */,
@@ -916,6 +955,7 @@
 				B2DA6E621C9A90AD000BA0F6 /* SPFileTools.m in Sources */,
 				B29795B81C92E6E100A80CC9 /* SPTabBarController.m in Sources */,
 				B2A1C1161C96BAB1004B2458 /* SPTagItem.m in Sources */,
+				B20E90A41CA2BD4E0068D078 /* NSDate+SPExtension.m in Sources */,
 				B26D22441C950A9E0028B497 /* SPADViewController.m in Sources */,
 				B2FC0F1E1C94649600847EC1 /* SPNavigationController.m in Sources */,
 				B2F03E4D1C998C6900116B85 /* UITextField+SPPlaceHolder.m in Sources */,
@@ -929,6 +969,7 @@
 				B283FA1A1C9262B900312DB6 /* ______.xcdatamodeld in Sources */,
 				B2A1C1101C96B061004B2458 /* SPPublishController.m in Sources */,
 				B203F75C1C95A4360077C828 /* SPPictureViewController.m in Sources */,
+				B2DCE2711CA43189008E2DEA /* SPTopicPicView.m in Sources */,
 				B2C0167D1C9553C600274E0C /* SPAdItem.m in Sources */,
 				B2A2A6901C99865F00ED4480 /* NSObject+SPRuntimeTest.m in Sources */,
 				B2A9BA661C931403002FAA1F /* SPCustomTabBar.m in Sources */,
@@ -937,6 +978,7 @@
 				B2BD3C051C9E961E00C647F5 /* SPRefreshHeader.m in Sources */,
 				B203F7591C95A4230077C828 /* SPVoiceViewController.m in Sources */,
 				B2F6583C1C96F8A900469CEB /* UIImageView+SPExtension.m in Sources */,
+				B2DCE26C1CA4310F008E2DEA /* SPTopicVoiceView.m in Sources */,
 				B2BF34EF1C9A718300B6EB64 /* SPCollectionViewCell.m in Sources */,
 				B29795C71C92E8E500A80CC9 /* SPNewController.m in Sources */,
 				B24E7CE01C98355A00B8F8E5 /* SPloginRegistController.m in Sources */,

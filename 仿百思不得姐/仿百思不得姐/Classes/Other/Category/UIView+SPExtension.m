@@ -103,4 +103,10 @@
 {
     self.sp_y = sp_bottom - self.sp_height;
 }
+
+
++ (instancetype)sp_viewFromXib{
+
+    return [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil].firstObject;
+}
 @end

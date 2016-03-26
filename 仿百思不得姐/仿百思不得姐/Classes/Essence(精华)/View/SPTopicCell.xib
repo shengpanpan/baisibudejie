@@ -28,12 +28,6 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgI-AK-VWd" userLabel="时间">
-                        <rect key="frame" x="55" y="24" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sfv-sf-yqp" userLabel="更多">
                         <rect key="frame" x="332" y="10" width="30" height="22"/>
                         <constraints>
@@ -41,6 +35,9 @@
                         </constraints>
                         <state key="normal" title="Button" image="cellmorebtnnormal"/>
                         <state key="highlighted" image="cellmorebtnclick"/>
+                        <connections>
+                            <action selector="more:" destination="fM2-2J-NAl" eventType="touchUpInside" id="Pbd-iy-7nz"/>
+                        </connections>
                     </button>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCL-vD-gXr" userLabel="底部工具条">
                         <rect key="frame" x="0.0" y="320" width="372" height="35"/>
@@ -57,12 +54,14 @@
                                     <constraint firstAttribute="width" constant="1" id="h4n-yA-IZ4"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfS-07-uNl">
-                                <rect key="frame" x="93" y="1" width="93" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfS-07-uNl">
+                                <rect key="frame" x="94" y="1" width="93" height="34"/>
                                 <state key="normal" title="踩" image="mainCellCai">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="踩" image="mainCellCaiClick">
                                     <color key="titleColor" red="1" green="0.61929975260000003" blue="0.13729221929999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <state key="highlighted" title="踩" image="mainCellCaiClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="Ehl-6i-uXX">
                                 <rect key="frame" x="186" y="0.0" width="1" height="35"/>
@@ -79,23 +78,29 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFI-ri-xwf">
                                 <rect key="frame" x="280" y="1" width="92" height="34"/>
                                 <state key="normal" title="评论" image="mainCellComment">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="评论" image="mainCellCommentClick">
                                     <color key="titleColor" red="1" green="0.61929975260000003" blue="0.13729221929999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <state key="highlighted" title="评论" image=" mainCellCommentClick"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh5-o2-T6C">
-                                <rect key="frame" x="0.0" y="1" width="92" height="34"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcF-hn-tGI">
+                                <rect key="frame" x="188" y="1" width="92" height="34"/>
+                                <state key="normal" title="转发" image="mainCellShare">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" image="mainCellShareClick">
+                                    <color key="titleColor" red="1" green="0.61929975260000003" blue="0.13729221929999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh5-o2-T6C">
+                                <rect key="frame" x="-6" y="8" width="92" height="34"/>
                                 <state key="normal" title="顶" image="mainCellDing">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" title="顶" image="mainCellDingClick">
                                     <color key="titleColor" red="1" green="0.61929975260000003" blue="0.13729221929999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <state key="highlighted" title="顶" image="mainCellDingClick"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcF-hn-tGI">
-                                <rect key="frame" x="187" y="1" width="92" height="34"/>
-                                <state key="normal" title="分享" image="mainCellShare">
-                                    <color key="titleColor" red="1" green="0.61929975260000003" blue="0.13729221929999999" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <state key="highlighted" image="mainCellShareClick"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,39 +136,43 @@
                             <constraint firstItem="pFI-ri-xwf" firstAttribute="top" secondItem="3dB-xr-wlQ" secondAttribute="bottom" id="zDc-Qe-0ft"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgI-AK-VWd" userLabel="时间">
+                        <rect key="frame" x="55" y="24" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgJ-eg-VVk" userLabel="文字内容">
+                        <rect key="frame" x="12" y="53" width="352" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oWY-ge-7rO" userLabel="最热评论">
-                        <rect key="frame" x="18" y="251" width="336" height="59"/>
+                        <rect key="frame" x="18" y="253" width="336" height="59"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7C-kO-LZV">
-                                <rect key="frame" x="0.0" y="23" width="660" height="36"/>
-                                <string key="text">精彩评论内容精彩评论内容精彩评论内容精彩评论内容精彩评论内容精彩评论内容精彩评论内容精彩
-评论内容精彩评论内容</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="精彩评论" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yI-d2-Y1K">
                                 <rect key="frame" x="0.0" y="0.0" width="76" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="评论内容" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7C-kO-LZV">
+                                <rect key="frame" x="0.0" y="20" width="336" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.80298524650000003" blue="0.63617852649999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="G7C-kO-LZV" firstAttribute="leading" secondItem="oWY-ge-7rO" secondAttribute="leading" id="13U-sf-ugX"/>
                             <constraint firstItem="G7C-kO-LZV" firstAttribute="top" secondItem="9yI-d2-Y1K" secondAttribute="bottom" id="6pm-i5-OwV"/>
+                            <constraint firstAttribute="trailing" secondItem="G7C-kO-LZV" secondAttribute="trailing" id="7Mb-4V-N4E"/>
                             <constraint firstAttribute="bottom" secondItem="G7C-kO-LZV" secondAttribute="bottom" id="YPM-ia-l9n"/>
                             <constraint firstItem="9yI-d2-Y1K" firstAttribute="leading" secondItem="oWY-ge-7rO" secondAttribute="leading" id="dDM-nA-kf3"/>
                             <constraint firstItem="9yI-d2-Y1K" firstAttribute="top" secondItem="oWY-ge-7rO" secondAttribute="top" id="qUI-oc-quZ"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RgJ-eg-VVk" userLabel="文字内容">
-                        <rect key="frame" x="10" y="53" width="352" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="RgJ-eg-VVk" firstAttribute="top" secondItem="JQz-dq-YLk" secondAttribute="bottom" constant="10" id="EMU-g7-kAH"/>
@@ -186,20 +195,21 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cai" destination="BfS-07-uNl" id="a14-yV-Iac"/>
-                <outlet property="comment" destination="pFI-ri-xwf" id="G4P-yu-au2"/>
+                <outlet property="caiButton" destination="BfS-07-uNl" id="sCU-Jy-M2R"/>
+                <outlet property="cmtView" destination="oWY-ge-7rO" id="tE5-Sy-Zla"/>
+                <outlet property="commentButton" destination="pFI-ri-xwf" id="YGE-gB-1cY"/>
                 <outlet property="created_atLabel" destination="JgI-AK-VWd" id="fvI-nP-nqw"/>
-                <outlet property="ding" destination="yh5-o2-T6C" id="BeA-9F-YaL"/>
+                <outlet property="dingButton" destination="yh5-o2-T6C" id="yAR-Td-6Qs"/>
                 <outlet property="nameLabel" destination="j5N-Tx-tFW" id="ycN-u7-P3L"/>
                 <outlet property="profile_image" destination="JQz-dq-YLk" id="AiC-lP-fYg"/>
-                <outlet property="repost" destination="jcF-hn-tGI" id="5z9-9i-RIZ"/>
+                <outlet property="repostButton" destination="jcF-hn-tGI" id="zHX-Qn-qxR"/>
                 <outlet property="text_Label" destination="RgJ-eg-VVk" id="12s-he-hsL"/>
+                <outlet property="top_cmtLabel" destination="G7C-kO-LZV" id="s5F-4x-JkZ"/>
             </connections>
-            <point key="canvasLocation" x="518" y="404"/>
+            <point key="canvasLocation" x="443" y="451"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name=" mainCellCommentClick" width="24" height="20"/>
         <image name="cell-button-line" width="1" height="29"/>
         <image name="cell-content-line" width="299" height="1"/>
         <image name="cellmorebtnclick" width="24" height="20"/>
@@ -207,6 +217,7 @@
         <image name="mainCellCai" width="20" height="20"/>
         <image name="mainCellCaiClick" width="20" height="20"/>
         <image name="mainCellComment" width="20" height="20"/>
+        <image name="mainCellCommentClick" width="20" height="20"/>
         <image name="mainCellDing" width="20" height="20"/>
         <image name="mainCellDingClick" width="20" height="20"/>
         <image name="mainCellShare" width="20" height="20"/>
